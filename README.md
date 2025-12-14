@@ -1,188 +1,62 @@
-# Site Erika Diaz de Cerio
+# site-erika
 
-Site vitrine professionnel pour Erika Diaz de Cerio, magnétiseuse et praticienne en soins énergétiques à Hendaye.
+Site vitrine Nuxt 4 pour Erika Diaz de Cerio - Magnétiseuse à Hendaye
 
-## 🚀 Technologies
+## Stack
 
-- **[Nuxt 4](https://nuxt.com/)** - Framework Vue.js avec SSR/SSG
-- **[Vue 3](https://vuejs.org/)** - Framework JavaScript progressif
-- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
-- **TypeScript** - Typage statique pour JavaScript
+- Nuxt 4
+- Vue 3 (Composition API, `<script setup>`)
+- Tailwind CSS
+- TypeScript
 
-## 📋 Prérequis
-
-- Node.js >= 18.x
-- npm, pnpm, yarn ou bun
-
-## 🛠️ Installation
-
-Installer les dépendances :
+## Setup
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## 🏃 Développement
-
-Démarrer le serveur de développement sur `http://localhost:3000` :
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## 🏗️ Structure du projet
+## Structure
 
 ```
-site-erika/
-├── app/
-│   ├── app.vue              # Point d'entrée de l'application
-│   ├── components/          # Composants Vue réutilisables
-│   │   ├── home/            # Composants spécifiques à la page d'accueil
-│   │   ├── layout/          # Composants de layout (header, footer)
-│   │   └── ui/              # Composants UI génériques
-│   ├── composable/          # Composables Vue (logique réutilisable)
-│   ├── layouts/             # Layouts de pages
-│   │   └── default.vue      # Layout par défaut
-│   └── pages/               # Pages de l'application (routing automatique)
-│       ├── index.vue        # Page d'accueil
-│       ├── a-propos.vue     # Page À propos
-│       ├── mes-pratiques.vue # Page Mes pratiques
-│       ├── tarifs.vue       # Page Tarifs
-│       ├── contact.vue      # Page Contact
-│       └── avis.vue         # Page Avis
-├── public/                  # Fichiers statiques
-├── nuxt.config.ts          # Configuration Nuxt
-├── tailwind.config.ts      # Configuration Tailwind CSS
-└── package.json            # Dépendances et scripts
+app/
+├── app.vue              # Entry point
+├── components/
+│   ├── home/            # Homepage components
+│   ├── layout/          # Header, Footer
+│   └── ui/              # Generic UI components
+├── composable/          # Composables
+├── layouts/
+│   └── default.vue      # Default layout (uses <slot />)
+└── pages/               # Auto-routing
+    ├── index.vue
+    ├── a-propos.vue
+    ├── mes-pratiques.vue
+    ├── tarifs.vue
+    ├── contact.vue
+    └── avis.vue
 ```
 
-## 🎨 Configuration Tailwind
+## Tailwind config
 
-Le projet utilise une palette de couleurs personnalisée :
+Couleurs custom dans `tailwind.config.ts` :
 
-- **Sage** : `#8FAF97` (avec variantes dark et light)
-- **Sand** : `#E8E2D9` (avec variante light)
-- **Coffee** : `#6B635A`
-- **Terracotta** : `#C99A84`
+- `sage` : `#8FAF97` (dark: `#6E8B78`, light: `#EEF2EF`)
+- `sand` : `#E8E2D9` (light: `#FAF7F2`)
+- `coffee` : `#6B635A`
+- `terracotta` : `#C99A84`
 
-Les classes Tailwind personnalisées sont disponibles dans tous les composants.
+Border radius custom : `xl` (12px), `2xl` (20px)
 
-## 📦 Build pour la production
+## Scripts
 
-Générer une build optimisée pour la production :
+- `npm run dev` - Dev server
+- `npm run build` - Production build
+- `npm run generate` - Static generation
+- `npm run preview` - Preview production build
 
-```bash
-# npm
-npm run build
+## Notes
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-## 👀 Prévisualisation de la build
-
-Prévisualiser localement la build de production :
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-## 📄 Génération statique
-
-Générer une version statique du site (SSG) :
-
-```bash
-# npm
-npm run generate
-
-# pnpm
-pnpm generate
-
-# yarn
-yarn generate
-
-# bun
-bun run generate
-```
-
-## 🚢 Déploiement
-
-Le site peut être déployé sur différentes plateformes :
-
-- **Netlify** : Déploiement automatique depuis Git
-- **Vercel** : Déploiement automatique depuis Git
-- **Nuxt Hosting** : Solution hébergée par Nuxt
-
-Consultez la [documentation de déploiement Nuxt](https://nuxt.com/docs/getting-started/deployment) pour plus d'informations.
-
-## 📝 Scripts disponibles
-
-- `npm run dev` - Démarre le serveur de développement
-- `npm run build` - Build pour la production
-- `npm run generate` - Génère une version statique
-- `npm run preview` - Prévisualise la build de production
-- `npm run postinstall` - Prépare Nuxt (exécuté automatiquement après installation)
-
-## 🔧 Configuration
-
-### Nuxt
-
-La configuration Nuxt se trouve dans `nuxt.config.ts`. Elle inclut :
-
-- Configuration des modules (Tailwind CSS)
-- Métadonnées SEO
-- Configuration de l'application
-
-### Tailwind CSS
-
-La configuration Tailwind se trouve dans `tailwind.config.ts`. Elle définit :
-
-- La palette de couleurs personnalisée
-- Les valeurs de border-radius personnalisées
-- Les chemins de scan pour les classes utilitaires
-
-## 📚 Documentation
-
-- [Documentation Nuxt](https://nuxt.com/docs)
-- [Documentation Vue 3](https://vuejs.org/)
-- [Documentation Tailwind CSS](https://tailwindcss.com/docs)
-
-## 📄 Licence
-
-Ce projet est privé et propriétaire.
+- Nuxt 4 utilise la structure `app/` (pas de `pages/` ou `layouts/` à la racine)
+- Le layout utilise `<slot />`, pas `<NuxtPage />` (c'est `app.vue` qui gère `<NuxtPage />`)
+- Tailwind scanne `app/**/*.{vue,js,ts}`
