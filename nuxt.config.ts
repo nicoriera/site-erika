@@ -22,11 +22,12 @@ export default defineNuxtConfig({
     langDir: "locales",
     defaultLocale: "fr",
     strategy: "prefix_except_default",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "i18n_redirected",
-      redirectOn: "root",
-    },
+    // Désactivé pour la génération statique (peut causer des problèmes)
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: "i18n_redirected",
+    //   redirectOn: "root",
+    // },
   },
   app: {
     head: {
