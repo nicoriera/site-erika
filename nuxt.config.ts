@@ -55,10 +55,9 @@ export default defineNuxtConfig({
   },
   // Optimisation pour la génération statique
   nitro: {
-    logLevel: 3, // Verbose logging
     prerender: {
       crawlLinks: true, // Crawler les liens pour pré-rendre toutes les pages
-      failOnError: true, // Afficher les erreurs
+      failOnError: false, // Ne pas échouer sur les erreurs pour voir toutes les routes
       routes: [
         '/',
         '/es',
