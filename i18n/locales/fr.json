@@ -42,5 +42,211 @@
     "readMore": "En savoir plus",
     "contact": "Contactez-moi",
     "bookAppointment": "Prendre rendez-vous"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "N'hésitez pas à me contacter pour toute question ou pour prendre rendez-vous",
+    "info": {
+      "title": "Informations de contact",
+      "address": "13 rue du Siège",
+      "city": "64700 Hendaye",
+      "phone": "Téléphone",
+      "email": "Email",
+      "schedule": "Consultations sur rendez-vous du lundi au samedi"
+    },
+    "map": {
+      "title": "Comment me trouver"
+    }
+  },
+  "home": {
+    "hero": {
+      "name": "Erika Diaz de Cerio",
+      "title": "Magnétiseuse et praticienne en soins énergétiques",
+      "location": "Hendaye"
+    },
+    "vision": {
+      "title": "Ma vision du magnétisme",
+      "intro": "Le magnétisme est pour moi une pratique douce, naturelle et profondément humaine.",
+      "description": "Il permet de remettre l'énergie en mouvement, d'apaiser les tensions — qu'elles soient **physiques, émotionnelles ou mentales** — et d'aider chacun à retrouver un mieux-être durable.",
+      "subtitle": "Amoureuse de la nature humaine",
+      "welcome": "j'accueille chaque personne dans un **espace de confiance, d'écoute et de bienveillance.**",
+      "session": "Chaque séance est **unique et adaptée à votre histoire et vos besoins actuels**, avec pour objectif de :",
+      "goals": {
+        "blockages": "dénouer les blocages énergétiques",
+        "circulation": "réactiver la circulation de l'énergie",
+        "harmony": "réharmoniser le corps, le cœur et l'esprit"
+      },
+      "moment": "C'est un moment suspendu, une **parenthèse de détente** pour retrouver votre **légèreté**, votre **vitalité** et votre **confiance en vous**.",
+      "belief": "Je crois profondément que chacun peut, à son rythme, retrouver son **équilibre** et sa **vitalité** - il suffit parfois d'un instant, d'une écoute, d'une séance, pour remettre l'énergie en mouvement."
+    },
+    "situations": {
+      "title": "Exemples de situations sur lesquelles nous pouvons travailler ensemble",
+      "physical": {
+        "title": "Soulagement physique et énergétique",
+        "items": [
+          "Douleurs articulaires, musculaires, tensions (trapèzes, nuque, dos…)",
+          "Fatigue intense ou chronique",
+          "Maux de tête, migraines, céphalées",
+          "Problèmes de peau",
+          "Brûlures",
+          "Constipation",
+          "Effets secondaires liés à des traitements médicaux",
+          "Douleurs menstruelles"
+        ]
+      },
+      "emotional": {
+        "title": "Équilibre émotionnel et mental",
+        "items": [
+          "Stress, anxiété, angoisses",
+          "Manque d'estime de soi",
+          "Traumatismes non digérés",
+          "Perte de sens, épuisement",
+          "Troubles du sommeil, insomnie"
+        ]
+      }
+    },
+    "aboutTeaser": {
+      "title": "À propos de moi",
+      "greeting": "Bonjour et bienvenue",
+      "intro": "Je suis Erika, magnétiseuse et praticienne en soins énergétiques à Hendaye. Sensible depuis toujours au bien-être des autres, j'ai découvert que ma capacité à apaiser et rééquilibrer l'énergie pouvait véritablement aider.",
+      "today": "Aujourd'hui, j'aide les personnes à soulager leurs douleurs, libérer leurs tensions émotionnelles et retrouver équilibre et sérénité grâce à des séances personnalisées, adaptées aux besoins physiques comme émotionnels."
+    },
+    "cta": {
+      "title": "Votre bien être mérite une place !",
+      "subtitle": "Prenez soin de votre énergie.",
+      "questions": {
+        "difficult": "Vous traversez une **période difficile ou douloureuse** ?",
+        "emotions": "Vous rencontrez du mal à **gérer vos émotions** ?",
+        "pause": "Vous ressentez le besoin de faire une **pause**, de vous recentrer, de retrouver un **équilibre physique, émotionnel et mental** ?"
+      },
+      "accompaniment": "Je vous accompagne avec douceur et bienveillance sur ce chemin vers du **mieux-être durable**."
+    }
+  },
+  "practices": {
+    "title": "Mes pratiques",
+    "magnetism": {
+      "title": "Magnétisme et soins énergétiques",
+      "metaphor": "Faire un soin énergétique c'est comme remettre de l'ordre dans les câbles électriques d'une maison — on aide le courant à mieux passer.",
+      "intro": "Tout comme la respiration ou la circulation du sang, chaque être humain dispose d'une énergie en mouvement constant.",
+      "description": "Quand cette énergie circule librement, on se sent en forme, calme, aligné. Cependant, lorsque des blocages apparaissent (par le stress, la fatigue, les émotions...), ils peuvent provoquer des douleurs, des maladies ou un mal-être général.",
+      "role": "Mon rôle, lors d'un soin énergétique, est d'aider le corps à retrouver son équilibre qu'il soit **physique, émotionnel ou mental**.",
+      "process": "Pour cela, je me connecte à votre énergie et repère les points de blocage. Puis en tant que canal, **j'aide le corps à relâcher ces blocages, à faire le plein d'énergie et à retrouver sa fluidité naturelle, son bien-être intérieur.**",
+      "benefits": "Une séance de magnétisme peut offrir de nombreux bienfaits :",
+      "benefitsList": [
+        "Réduction de la douleur",
+        "Apaisement",
+        "Accélération du processus de guérison",
+        "Amélioration du sommeil",
+        "Soulagement du stress",
+        "Regain d'énergie vitale",
+        "Renforcement des défenses immunitaires et du bien-être global"
+      ],
+      "complementary": "Pratique complémentaire à la médecine traditionnelle:",
+      "complementaryNote": "Bien qu'**efficaces**, les soins énergétiques s'inscrivent dans une **démarche d'accompagnement** et ne substituent **en aucun cas un traitement médical.**",
+      "session": {
+        "title": "Déroulé d'une séance",
+        "beginning": "Chaque soin débute par un **temps d'échange bienveillant.** Vous me partagez ce que vous vivez, vos ressentis, **vos attentes**.",
+        "adaptation": "Ce moment d'écoute permet d'instaurer une relation de confiance et d'**adapter le soin** à votre état du moment. C'est pourquoi que le premier rdv est souvent un peu plus long.",
+        "during": "La séance se déroule **habillé**, allongé confortablement sur la table de soin et avec en fond une musique douce et apaisante.",
+        "process": "Par mouvements des mains au-dessus du corps ou par légers contacts, **je canalise et transmets l'énergie nécessaire** au rééquilibrage de vos flux énergétiques.",
+        "intervention": "J'interviens sur les zones de tension, les déséquilibres ou les points spécifiques **selon vos besoins**.",
+        "sensations": "Pendant le soin, vous pouvez ressentir de la chaleur, des picotements, des pensées évasives ou simplement une profonde détente. Chaque personne réagit à sa manière.",
+        "end": "En fin de séance, un temps d'échange permet de partager vos ressentis. Je vous explique le travail effectué et donne des conseils simples pour renforcer les effets du soin."
+      },
+      "after": {
+        "title": "L'après séance",
+        "water": "Afin de soutenir la circulation de l'énergie et stabiliser les effets du soin, il est recommandé de **boire beaucoup d'eau.**",
+        "benefits": "Les bienfaits peuvent se manifester immédiatement ou dans les jours qui suivent, le temps que **votre énergie se ré-harmonise pleinement**.",
+        "feelings": "Les ressentis diffèrent selon les personnes en fonction de votre état énergétique, de la cause soulagée et donc du travail effectué ensemble.",
+        "days": "Dans les 3-4 jours après la séance, certaines personnes ressentent une détente profonde, une fatigue légère, une période de remous, ou bien au contraire une vitalité accrue, plus de clarté mentale et relationnelle.",
+        "sensitivity": "L'expression d'une hypersensibilité émotionnelle est également fréquente.",
+        "oldPain": "Il arrive parfois que d'anciennes douleurs refassent brièvement surface.",
+        "positive": "Ces signaux sont positifs et attestent du travail de rééquilibrage en cours, c'est un passage quasi obligatoire avant d'atteindre les fruits de notre travail.",
+        "frequency": "Selon votre situation, une seule séance peut suffire. Dans certains cas, un accompagnement sur plusieurs rendez-vous espacés de quelques semaines permet un travail plus profond et durable."
+      }
+    },
+    "cutFire": {
+      "title": "Couper le feu",
+      "intro": "\"Couper le feu\" est l'une des applications les plus connues du magnétisme par le grand public.",
+      "uses": "Cette pratique permet de **soulager les brûlures domestiques**, mais aussi d'accompagner les effets secondaires de traitements médicaux (radiothérapie, chimiothérapie…), les coups de soleil, certaines affections de la peau (eczéma, zona, herpès…), ou les inflammations.",
+      "goal": "L'objectif est de **réduire la sensation de chaleur, d'apaiser la douleur et de favoriser le processus de cicatrisation.**",
+      "location": "L'intervention peut se faire **au cabinet ou à distance**, selon l'urgence de la situation.",
+      "urgency": "Mon action aidant à **ralentir la propagation de la chaleur** dans les tissus, **une action rapide est préférable** : plus le soin est effectué tôt, plus les effets sont rapides et efficaces.",
+      "sessions": "Selon la gravité de la brûlure, de l'inflammation, plusieurs séances peuvent être nécessaires.",
+      "important": "Important:",
+      "note": "Cette pratique ne remplace pas les soins médicaux, mais elle peut compléter efficacement, en améliorant le confort de la personne et en accélérant le processus de rétablissement."
+    },
+    "remote": {
+      "title": "Soins à distance",
+      "intro": "L'énergie n'étant pas limitée par l'espace, les **soins à distance** fonctionnent sur le même principe qu'en présentiel.",
+      "process": "Tout comme en cabinet, je me connecte à votre énergie pour harmoniser vos flux énergétiques, dissoudre les blocages et restaurer votre vitalité.",
+      "feelings": "Les ressentis sont souvent similaires: chaleur, apaisement, légèreté, sérénité…",
+      "efficiency": "Les effets sont **aussi efficaces qu'un soin en présentiel**.",
+      "before": "Avant la séance, nous échangeons par téléphone pour **préciser votre besoin** et convenir d'un créneau pendant lequel vous serez au calme.",
+      "photos": "J'ai ensuite besoin de **deux photos prises le jour même**: une de la personne de plein pied et une autre de la zone à soulager.",
+      "after": "Après le soin, nous reprenons contact pour échanger sur vos ressentis et le travail effectué.",
+      "useful": "Les soins à distance sont particulièrement utiles lorsqu'un déplacement est difficile ou lorsqu'une intervention rapide est nécessaire."
+    }
+  },
+  "about": {
+    "title": "À propos de moi",
+    "greeting": "Bonjour et bienvenue",
+    "intro": "Je suis **Erika**, **magnétiseuse** et **praticienne en soins énergétiques** installée à **Hendaye**.",
+    "childhood": "Depuis petite, j'ai grandi avec l'idée que l'on pouvait **soulager, apaiser ou guérir avec les mains**, avec une présence, avec l'énergie. Dans ma famille, plusieurs personnes évoluant dans les **médecines douces** j'ai fréquemment entendu échanger sur des expériences, des anecdotes, des réussites…",
+    "natural": "C'était pour moi quelque chose de naturel… mais uniquement chez les autres.",
+    "never": "Je ne m'étais jamais autorisée d'imaginer que cela pouvait **me concerner**, ni que j'avais, moi aussi, **cette possibilité d'aider**.",
+    "background": "De nature très terre à terre, j'ai avant d'emprunter cette voie suivi un chemin qui ne laissait pas présager que je travaillerais dans l'énergie. J'ai évolué plusieurs années dans le **commerce**, le **management** et le **service client**.",
+    "human": "Des métiers très humains, où j'ai aimé créer du lien, accompagner, comprendre, soutenir.",
+    "already": "Sans le savoir, j'étais déjà en train d'écouter, rassurer, apaiser — simplement dans un autre cadre.",
+    "heart": "Même si mes activités semblaient éloignées du magnétisme, l'**humain a toujours été au cœur de mes choix professionnels**. J'ai toujours eu cette facilité à accueillir les émotions et les besoins des autres, à sentir ce qui se passait derrière les mots (mais aussi les maux), même lorsqu'ils n'étaient pas exprimés.",
+    "revelation": {
+      "title": "Quand l'évidence se révèle",
+      "text": "Les épreuves personnelles, les expériences et les rencontres, m'ont progressivement ramenée vers l'énergie — comme si ce chemin m'attendait depuis longtemps.",
+      "realization": "Avec le temps, j'ai réalisé que cette sensibilité, que je considérais comme \"normale\", était en réalité une **capacité qui demandait à s'exprimer pleinement**.",
+      "decision": "Prendre ce chemin n'a pas été une décision impulsive, mais une **évidence qui s'est imposée doucement**.",
+      "training": "J'ai alors entrepris de me former, de comprendre, de me recentrer et d'affiner ce que je ressentais depuis toujours. Et… lorsque je me suis enfin autorisée à explorer cette voie, **tout est allé très vite**.",
+      "first": "Dès les **premiers exercices**, les premiers ressentis, les **premiers soins**… j'ai vécu comme une **révélation**. Comme si cette pratique avait toujours été là, en attente, prête à se révéler.",
+      "today": "Aujourd'hui, j'accompagne les personnes souhaitant **soulager leurs douleurs physiques, apaiser leurs émotions et retrouver un équilibre global** dans leur vie.",
+      "therapist": "En tant que **thérapeute énergétique**, je vous propose des séances personnalisées pour vous aider à **réharmoniser votre énergie**, à **libérer les tensions** et à **retrouver vitalité et sérénité** au quotidien.",
+      "invitation": "Chaque rencontre est une invitation à retrouver votre équilibre, votre légèreté et votre énergie vitale.",
+      "pleasure": "Au plaisir de vous accompagner."
+    },
+    "complementary": "Pratique complémentaire à la médecine traditionnelle:",
+    "complementaryNote": "Bien qu'**efficaces**, les soins énergétiques s'inscrivent dans une **démarche d'accompagnement** et ne substituent **en aucun cas un traitement médical.**"
+  },
+  "rates": {
+    "title": "Tarifs",
+    "subtitle": "Tarifs des séances",
+    "table": {
+      "service": "Prestation",
+      "duration": "Durée",
+      "price": "Tarif",
+      "action": "Action"
+    },
+    "services": {
+      "adult": {
+        "name": "Magnétisme / Soins énergétiques (Adulte)",
+        "duration": "1h – 1h30",
+        "price": "70€"
+      },
+      "child": {
+        "name": "Magnétisme / Soins énergétiques (Moins de 14 ans)",
+        "duration": "30 min – 1h",
+        "price": "60€"
+      },
+      "cutFire": {
+        "name": "Couper le feu",
+        "duration": "En fonction du nombre de séances nécessaires",
+        "price": "Sur devis"
+      }
+    },
+    "bookAppointment": "Prendre RDV",
+    "contactMe": "Contactez-moi"
+  },
+  "reviews": {
+    "title": "Déposer un avis",
+    "subtitle": "Votre avis m'aide à améliorer mes services",
+    "description": "Si vous avez bénéficié de mes soins, n'hésitez pas à partager votre expérience sur Google Avis.",
+    "button": "Déposer un avis sur Google"
   }
 }
