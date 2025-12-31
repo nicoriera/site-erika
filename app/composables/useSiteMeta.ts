@@ -12,12 +12,12 @@ export const useSiteMeta = (
 ) => {
   const config = useRuntimeConfig();
   const route = useRoute();
-  const { $i18n } = useNuxtApp();
+  const { locale } = useI18n();
 
   // URL complète de la page
   const baseUrl =
     (config.public.siteUrl as string) || "https://erika-diaz-de-cerio.fr";
-  const currentLocale = $i18n.locale.value || "fr";
+  const currentLocale = locale.value || "fr";
   const path = route.path;
   const canonicalUrl = `${baseUrl}${path}`;
 

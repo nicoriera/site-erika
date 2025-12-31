@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useStructuredData } from "~/composable/useStructuredData";
 // Smooth scroll global
 useHead({
   htmlAttrs: {
@@ -7,9 +6,9 @@ useHead({
   },
 });
 
-// Structured data pour le SEO
-const { addStructuredData } = useStructuredData();
-addStructuredData();
+// Structured data désactivé temporairement pour la génération statique
+// TODO: Réactiver après correction des erreurs SSR
+// useStructuredData();
 </script>
 
 <template>

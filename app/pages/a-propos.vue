@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useSiteMeta } from "../../composables/useSiteMeta";
-
 const { t } = useI18n();
 
 definePageMeta({});

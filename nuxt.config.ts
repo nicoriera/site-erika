@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         name: "Español",
       },
     ],
-    lazy: true,
+    lazy: false,
     langDir: "locales",
     defaultLocale: "fr",
     strategy: "prefix_except_default",
@@ -55,8 +55,10 @@ export default defineNuxtConfig({
   },
   // Optimisation pour la génération statique
   nitro: {
+    logLevel: 3, // Verbose logging
     prerender: {
       crawlLinks: true, // Crawler les liens pour pré-rendre toutes les pages
+      failOnError: true, // Afficher les erreurs
       routes: [
         '/',
         '/es',

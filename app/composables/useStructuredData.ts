@@ -53,13 +53,13 @@ interface ServiceSchema {
 
 export const useStructuredData = () => {
   const route = useRoute();
-  const { $i18n } = useNuxtApp();
+  const { locale } = useI18n();
   const { t } = useI18n();
 
   const config = useRuntimeConfig();
   const baseUrl =
     (config.public.siteUrl as string) || "https://erika-diaz-de-cerio.fr";
-  const currentLocale = $i18n.locale.value || "fr";
+  const currentLocale = locale.value || "fr";
 
   // Schema LocalBusiness
   const localBusinessSchema = computed<LocalBusinessSchema>(() => ({
@@ -133,30 +133,27 @@ export const useStructuredData = () => {
     },
   ]);
 
-  // Ajouter les schemas à la page
-  const addStructuredData = () => {
-    useHead({
-      script: [
-        {
-          type: "application/ld+json",
-          children: JSON.stringify(localBusinessSchema.value),
-        },
-        {
-          type: "application/ld+json",
-          children: JSON.stringify(personSchema.value),
-        },
-        ...serviceSchemas.value.map((schema) => ({
-          type: "application/ld+json",
-          children: JSON.stringify(schema),
-        })),
-      ],
-    });
-  };
+  // Ajouter les schemas à la page de manière réactive
+  useHead({
+    script: computed(() => [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(localBusinessSchema.value),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(personSchema.value),
+      },
+      ...serviceSchemas.value.map((schema) => ({
+        type: "application/ld+json",
+        children: JSON.stringify(schema),
+      })),
+    ]),
+  });
 
   return {
     localBusinessSchema,
     personSchema,
     serviceSchemas,
-    addStructuredData,
   };
 };
