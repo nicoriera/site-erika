@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import HomeHero from "~/components/home/HomeHero.vue";
-import HomeAboutTeaser from "~/components/home/HomeAboutTeaser.vue";
-import HomeSituations from "~/components/home/HomeSituations.vue";
-import HomeVision from "~/components/home/HomeVision.vue";
-import HomeCtaRdv from "~/components/home/HomeCtaRdv.vue";
+import { useSiteMeta } from "../../composables/useSiteMeta";
+
+const { t } = useI18n();
+
+definePageMeta({});
+
+useSiteMeta(t("pages.home"), t("meta.description"));
 </script>
 
 <template>
-  <section class="max-w-5xl mx-auto px-4 py-16">
+  <div class="max-w-5xl mx-auto px-4">
     <HomeHero />
-    <HomeAboutTeaser />
-    <HomeSituations />
     <HomeVision />
+    <HomeSituations />
+    <HomeAboutTeaser />
     <HomeCtaRdv />
-  </section>
+  </div>
 </template>

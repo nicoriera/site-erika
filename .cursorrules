@@ -1,0 +1,503 @@
+# Règles Cursor - Site Erika
+
+## Contexte du projet
+
+Site vitrine pour Erika Diaz de Cerio - Magnétiseuse et praticienne en soins énergétiques à Hendaye
+
+- Technologie : Nuxt 4 + Vue 3 + Tailwind CSS
+- Type : Site statique, SEO-first, sans backend
+- Référence : Voir BRIEF.md pour le contenu détaillé de chaque page
+
+## Architecture et structure
+
+### Organisation des fichiers
+
+- Dossier `app/` pour tous les fichiers de l'application
+- Composants organisés par domaine : `home/`, `ui/`, `layout/`
+- Pages dans `app/pages/`
+- Layouts dans `app/layouts/`
+- Traductions dans `i18n/locales/` (fr.json, es.json)
+
+### Composants
+
+- Utiliser `<script setup>` pour tous les composants Vue
+- Préférer la Composition API
+- Composants réutilisables dans `app/components/ui/`
+- Composants spécifiques à une page dans des dossiers dédiés (ex: `home/`)
+
+## Design et style
+
+### Palette de couleurs (Tailwind)
+
+- Vert sauge : `sage` (#8FAF97), `sage-dark` (#6E8B78), `sage-light` (#EEF2EF)
+- Beige : `sand` (#E8E2D9), `sand-light` (#FAF7F2)
+- Café : `coffee` (#6B635A)
+- Terre cuite : `terracotta` (#C99A84)
+
+### Typographie
+
+- Utiliser des polices élégantes (serif + sans-serif)
+- Font serif pour les titres : `font-serif`
+- Font sans-serif pour le corps : par défaut
+
+### Mise en page
+
+- Sections en quinconce (alternance gauche/droite)
+- Design doux, bien-être
+- Espacement généreux
+- Centrage pour certaines sections selon le brief
+
+## Fonctionnalités
+
+### Navigation
+
+- Menu avec : Accueil, Mes pratiques, À propos, Tarifs, Contact, Prendre RDV, Déposer un avis
+- Toggle de langue FR/ES dans le header
+- Logo cliquable vers l'accueil
+
+### Pages principales
+
+1. **Accueil** (`/`) : Hero, Vision, Situations, À propos teaser, CTA RDV
+2. **Mes pratiques** (`/mes-pratiques`) :
+   - Magnétisme et soins énergétiques
+   - Couper le feu
+   - Soins à distance
+3. **À propos** (`/a-propos`) : Histoire personnelle d'Erika
+4. **Tarifs** (`/tarifs`) : Tarifs des séances
+5. **Contact** (`/contact`) : Formulaire + coordonnées
+6. **Avis** (`/avis`) : Page pour déposer un avis
+
+### Liens externes
+
+- RDV via Resalib : lien externe vers `https://www.resalib.fr`
+- Bouton "Prendre RDV" visible dans le header et sur la page d'accueil
+
+## SEO et métadonnées
+
+### Utilisation de useSeoMeta
+
+- Utiliser le composable `useSiteMeta` pour chaque page
+- Titres et descriptions optimisés pour le SEO
+- Mots-clés : Erika Diaz de Cerio, Magnétiseuse, Hendaye, soins énergétiques
+
+### Images
+
+- Toutes les images dans `public/images/`
+- Utiliser des balises `<img>` avec `alt` descriptifs
+- Optimiser les images pour le web
+
+## Internationalisation
+
+### i18n
+
+- Utiliser `useI18n()` et `useLocalePath()` pour la navigation
+- Toutes les chaînes de caractères dans les fichiers de traduction
+- Stratégie : `prefix_except_default` (FR par défaut, ES avec préfixe `/es`)
+
+### Traductions
+
+- Toujours utiliser `t('key')` pour les textes
+- Ne jamais hardcoder de texte français dans les composants
+
+## Contraintes techniques
+
+### Pas de CMS
+
+- Contenu statique dans les composants et fichiers de traduction
+- Pas de backend, pas de base de données
+
+### Performance
+
+- Code splitting automatique avec Nuxt
+- Lazy loading des composants non critiques
+- Optimisation des images
+
+### Accessibilité
+
+- Utiliser des balises sémantiques HTML5
+- Attributs `aria-*` quand nécessaire
+- Contraste des couleurs respecté
+- Navigation au clavier fonctionnelle
+
+## Principes de design : Simple et efficace
+
+### KISS (Keep It Simple, Stupid)
+
+- **Simplicité avant tout** : Solutions simples et directes plutôt que complexes
+- Éviter la sur-ingénierie
+- Code lisible et compréhensible par tous
+- Une fonction = une responsabilité
+
+### YAGNI (You Aren't Gonna Need It)
+
+- Ne pas implémenter de fonctionnalités "au cas où"
+- Ajouter des fonctionnalités uniquement quand nécessaire
+- Éviter l'abstraction prématurée
+
+### DRY (Don't Repeat Yourself)
+
+- Réutiliser les composants et fonctions
+- Créer des composables pour la logique partagée
+- Centraliser les constantes et configurations
+
+### Flexibilité et maintenabilité
+
+- Architecture modulaire et découplée
+- Composants indépendants et réutilisables
+- Facile à modifier et étendre
+- Tests simples à écrire
+
+## Bonnes pratiques Nuxt 4
+
+### Structure Nuxt
+
+- Utiliser la structure `app/` (Nuxt 3+)
+- Auto-imports : Nuxt importe automatiquement les composants, composables, utils
+- Pas besoin d'importer explicitement les composants depuis `app/components/`
+- Utiliser `~/` pour les imports relatifs au projet
+
+### Composables Nuxt
+
+- Créer des composables dans `app/composable/` pour la logique réutilisable
+- Utiliser les composables Nuxt natifs : `useRoute()`, `useRouter()`, `useHead()`, `useSeoMeta()`
+- Préfixer les composables personnalisés avec `use` (ex: `useSiteMeta`)
+- Les composables sont auto-importés
+
+### Pages et routing
+
+- Pages dans `app/pages/` : routing automatique basé sur la structure de fichiers
+- Utiliser `definePageMeta()` pour les métadonnées de page
+- Navigation avec `<NuxtLink>` pour les liens internes
+- Utiliser `useLocalePath()` pour les liens i18n
+
+### SEO et métadonnées
+
+- Utiliser `useSeoMeta()` dans chaque page pour le SEO
+- Créer un composable `useSiteMeta()` pour centraliser la logique SEO
+- Utiliser `useHead()` pour les métadonnées dynamiques
+- Titres et descriptions uniques par page
+
+### Performance Nuxt
+
+- Code splitting automatique par route
+- Lazy loading avec `defineAsyncComponent()` pour les gros composants
+- Utiliser `<NuxtImg>` pour l'optimisation d'images (si module installé)
+- Précharger les routes critiques avec `prefetchLinks`
+
+### Auto-imports
+
+- Nuxt auto-importe : composants, composables, utils, types
+- Pas besoin d'importer `ref`, `computed`, `onMounted` depuis Vue
+- Pas besoin d'importer les composants depuis `app/components/`
+- Utiliser `#imports` uniquement si nécessaire pour la compatibilité TypeScript
+
+### TypeScript avec Nuxt
+
+- Nuxt génère automatiquement les types pour les auto-imports
+- Utiliser `defineProps<T>()` pour les props typées
+- Utiliser `defineEmits<T>()` pour les événements typés
+- Éviter `any`, utiliser `unknown` si nécessaire
+
+### Configuration
+
+- Configuration dans `nuxt.config.ts`
+- Modules dans `modules: []`
+- Variables d'environnement avec `runtimeConfig` si nécessaire
+- Utiliser les modules Nuxt officiels quand possible
+
+## Bonnes pratiques Vue 3
+
+### Composition API avec `<script setup>`
+
+- **Toujours utiliser `<script setup>`** pour tous les composants
+- Props typées avec `defineProps<T>()`
+- Événements avec `defineEmits<T>()`
+- Expose avec `defineExpose()` si nécessaire
+- Pas besoin de retourner dans le template
+
+### Réactivité
+
+- `ref()` pour les valeurs primitives
+- `reactive()` pour les objets (utiliser avec parcimonie)
+- `computed()` pour les valeurs dérivées
+- `watch()` et `watchEffect()` pour les effets de bord
+
+### Props et événements
+
+- Props typées avec TypeScript
+- Événements émis avec `defineEmits`
+- Validation des props si nécessaire
+- Props avec valeurs par défaut quand approprié
+
+### Performance Vue
+
+- Utiliser `v-memo` pour les listes complexes
+- `v-once` pour le contenu statique
+- `v-show` vs `v-if` : `v-show` pour les toggles fréquents, `v-if` pour le rendu conditionnel
+- Keys stables et uniques dans `v-for`
+
+### Tailwind CSS
+
+- Utiliser les classes utilitaires
+- Éviter les styles inline sauf cas spécifiques
+- Utiliser les couleurs du thème personnalisé
+- Créer des composants UI réutilisables plutôt que de répéter les classes
+
+## Bonnes pratiques générales
+
+### Code
+
+- TypeScript strict (éviter `any`)
+- Fonctions arrow par défaut
+- Async/await pour les opérations asynchrones
+- Gestion d'erreurs robuste
+- Noms de variables et fonctions explicites
+
+### Structure des fichiers
+
+- Un composant = un fichier
+- Nommer les fichiers en PascalCase pour les composants
+- Organiser par domaine fonctionnel
+- Garder les fichiers petits et focalisés (< 300 lignes idéalement)
+
+### Commentaires
+
+- Code auto-documenté avec des noms explicites
+- Commentaires pour expliquer le "pourquoi", pas le "comment"
+- JSDoc pour les fonctions publiques complexes
+
+## Contenu spécifique
+
+### Coordonnées
+
+- Adresse : 13 rue du Siège, 64700 Hendaye
+- Téléphone : 07 50 26 07 96
+- Email : erika.magnetiseuse@gmail.com ou soins.erika@gmail.com
+- Horaires : Consultations sur rendez-vous du lundi au samedi
+
+### Sections importantes
+
+- Hero avec prénom + titre sur photo
+- Vision du magnétisme (section principale)
+- Situations de travail (physique/émotionnel)
+- À propos teaser avec photo
+- CTA pour prise de RDV
+- Footer avec contact et Google Maps
+
+## Patterns Nuxt recommandés
+
+### Composables personnalisés
+
+```typescript
+// app/composable/useSiteMeta.ts
+export const useSiteMeta = (title?: string, description?: string) => {
+  const { t } = useI18n();
+
+  useSeoMeta({
+    title: title || t("meta.title"),
+    description: description || t("meta.description"),
+  });
+};
+```
+
+### Pages avec métadonnées
+
+```vue
+<script setup lang="ts">
+definePageMeta({
+  title: "Page Title",
+  layout: "default",
+});
+
+useSiteMeta("Custom Title", "Custom description");
+</script>
+```
+
+### Composants réutilisables
+
+- Préfixer les composants UI avec `Ui` (ex: `UiButton.vue`)
+- Composants spécifiques à une page dans des dossiers dédiés (ex: `HomeHero.vue`)
+- Props avec valeurs par défaut raisonnables
+- Slots pour la flexibilité
+
+### Gestion des traductions
+
+- Toujours utiliser `t('key')` depuis `useI18n()`
+- Clés de traduction organisées par domaine (nav, footer, pages, etc.)
+- Ne jamais hardcoder de texte dans les composants
+- Utiliser `useLocalePath()` pour la navigation i18n
+
+### Layouts
+
+- Layout par défaut dans `app/layouts/default.vue`
+- Utiliser `<slot />` pour le contenu des pages
+- Header et Footer dans le layout, pas dans chaque page
+- Layouts alternatifs si nécessaire (ex: `app/layouts/minimal.vue`)
+
+## Règles de flexibilité
+
+### Évolutivité
+
+- Structure modulaire : facile d'ajouter de nouvelles pages
+- Composants découplés : modification d'un composant n'affecte pas les autres
+- Configuration centralisée : changements faciles via config ou composables
+- Pas de dépendances circulaires
+
+### Maintenabilité
+
+- Code lisible et bien organisé
+- Documentation dans le code (noms explicites)
+- Tests faciles à écrire (composants isolés)
+- Refactoring simple (petites fonctions, responsabilités uniques)
+
+### Extensibilité
+
+- Facile d'ajouter de nouvelles langues (i18n)
+- Facile d'ajouter de nouvelles pages (routing automatique)
+- Facile d'ajouter de nouveaux composants (auto-imports)
+- Facile d'intégrer de nouveaux modules Nuxt
+
+## Erreurs à éviter (Anti-patterns)
+
+### Nuxt
+
+- ❌ Importer manuellement les composants depuis `app/components/` (utiliser l'auto-import)
+- ❌ Importer `ref`, `computed` depuis Vue (auto-importé)
+- ❌ Créer des routes manuellement dans un fichier de config (utiliser `app/pages/`)
+- ❌ Utiliser `@/` au lieu de `~/` pour les imports relatifs
+- ❌ Oublier `useSeoMeta()` dans les pages (SEO important)
+
+### Vue 3
+
+- ❌ Utiliser Options API au lieu de Composition API
+- ❌ Oublier les types TypeScript pour les props
+- ❌ Mutations directes des props (utiliser des computed ou events)
+- ❌ Oublier les `key` dans les `v-for`
+- ❌ Utiliser `v-if` et `v-for` sur le même élément (wrapper nécessaire)
+
+### Architecture
+
+- ❌ Créer trop d'abstractions prématurément (YAGNI)
+- ❌ Dupliquer du code au lieu de créer des composables
+- ❌ Composants trop gros (diviser en sous-composants)
+- ❌ Logique métier dans les composants (utiliser des composables)
+- ❌ Styles inline au lieu de classes Tailwind
+
+### Performance
+
+- ❌ Charger tous les composants en même temps (lazy loading)
+- ❌ Images non optimisées
+- ❌ Trop de réactivité inutile (utiliser `shallowRef` si nécessaire)
+- ❌ Computed qui retournent de nouveaux objets à chaque fois
+
+## Exemples de code
+
+### Composant simple et efficace
+
+```vue
+<script setup lang="ts">
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  description: "",
+});
+</script>
+
+<template>
+  <section class="py-16">
+    <h2 class="font-serif text-3xl">{{ title }}</h2>
+    <p v-if="description" class="mt-4">{{ description }}</p>
+  </section>
+</template>
+```
+
+### Page avec SEO
+
+```vue
+<script setup lang="ts">
+const { t } = useI18n();
+const localePath = useLocalePath();
+
+useSeoMeta({
+  title: t("pages.home"),
+  description: t("meta.description"),
+});
+</script>
+
+<template>
+  <div>
+    <!-- Contenu de la page -->
+  </div>
+</template>
+```
+
+### Composable réutilisable
+
+```typescript
+// app/composable/useNavigation.ts
+export const useNavigation = () => {
+  const { t } = useI18n();
+  const localePath = useLocalePath();
+
+  const navItems = computed(() => [
+    { label: t("nav.home"), path: localePath("/") },
+    { label: t("nav.practices"), path: localePath("/mes-pratiques") },
+    // ...
+  ]);
+
+  return { navItems };
+};
+```
+
+## Commandes Nuxt utiles
+
+### Développement
+
+- `npm run dev` : Démarrer le serveur de développement
+- `npm run build` : Build de production
+- `npm run generate` : Générer le site statique
+- `npm run preview` : Prévisualiser le build de production
+
+### Structure du projet
+
+```
+app/
+├── components/     # Composants auto-importés
+│   ├── ui/        # Composants UI réutilisables
+│   ├── layout/    # Composants de layout
+│   └── home/      # Composants spécifiques à la page d'accueil
+├── composable/    # Composables auto-importés
+├── layouts/       # Layouts de pages
+├── pages/         # Pages (routing automatique)
+└── app.vue        # Composant racine
+
+i18n/
+└── locales/       # Fichiers de traduction
+
+public/
+└── images/        # Images statiques
+```
+
+## Checklist avant commit
+
+- [ ] Code TypeScript sans erreurs
+- [ ] Tous les textes dans les fichiers de traduction
+- [ ] SEO configuré avec `useSeoMeta()` sur chaque page
+- [ ] Composants avec `<script setup>`
+- [ ] Props et événements typés
+- [ ] Pas de code dupliqué
+- [ ] Noms de variables et fonctions explicites
+- [ ] Images avec attributs `alt` descriptifs
+- [ ] Navigation i18n avec `useLocalePath()`
+
+## Notes de développement
+
+- Consulter BRIEF.md pour le contenu détaillé de chaque section
+- Respecter le ton bienveillant et doux dans les textes
+- Mise en page en quinconce pour alterner visuellement
+- Photos à ajouter progressivement (commencer sans si nécessaire)
+- **Priorité : simplicité et efficacité avant tout**
+- **Principe : code simple, maintenable et évolutif**

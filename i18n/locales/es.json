@@ -42,5 +42,211 @@
     "readMore": "Saber más",
     "contact": "Contáctame",
     "bookAppointment": "Reservar cita"
+  },
+  "home": {
+    "hero": {
+      "name": "Erika Diaz de Cerio",
+      "title": "Magnetizadora y practicante en cuidados energéticos",
+      "location": "Hendaya"
+    },
+    "vision": {
+      "title": "Mi visión del magnetismo",
+      "intro": "El magnetismo es para mí una práctica suave, natural y profundamente humana.",
+      "description": "Permite poner la energía en movimiento, calmar las tensiones — ya sean **físicas, emocionales o mentales** — y ayudar a cada uno a encontrar un bienestar duradero.",
+      "subtitle": "Amante de la naturaleza humana",
+      "welcome": "acogo a cada persona en un **espacio de confianza, escucha y benevolencia.**",
+      "session": "Cada sesión es **única y adaptada a su historia y necesidades actuales**, con el objetivo de :",
+      "goals": {
+        "blockages": "desbloquear los bloqueos energéticos",
+        "circulation": "reactivar la circulación de la energía",
+        "harmony": "rearmonizar el cuerpo, el corazón y la mente"
+      },
+      "moment": "Es un momento suspendido, una **pausa de relajación** para recuperar su **ligereza**, su **vitalidad** y su **confianza en sí mismo**.",
+      "belief": "Creo profundamente que cada uno puede, a su ritmo, recuperar su **equilibrio** y su **vitalidad** - a veces basta con un instante, una escucha, una sesión, para poner la energía en movimiento."
+    },
+    "situations": {
+      "title": "Ejemplos de situaciones en las que podemos trabajar juntos",
+      "physical": {
+        "title": "Alivio físico y energético",
+        "items": [
+          "Dolores articulares, musculares, tensiones (trapecios, cuello, espalda…)",
+          "Fatiga intensa o crónica",
+          "Dolores de cabeza, migrañas, cefaleas",
+          "Problemas de piel",
+          "Quemaduras",
+          "Estreñimiento",
+          "Efectos secundarios relacionados con tratamientos médicos",
+          "Dolores menstruales"
+        ]
+      },
+      "emotional": {
+        "title": "Equilibrio emocional y mental",
+        "items": [
+          "Estrés, ansiedad, angustias",
+          "Falta de autoestima",
+          "Traumas no digeridos",
+          "Pérdida de sentido, agotamiento",
+          "Trastornos del sueño, insomnio"
+        ]
+      }
+    },
+    "aboutTeaser": {
+      "title": "Sobre mí",
+      "greeting": "Hola y bienvenido",
+      "intro": "Soy Erika, magnetizadora y practicante en cuidados energéticos en Hendaya. Sensible desde siempre al bienestar de los demás, descubrí que mi capacidad para calmar y reequilibrar la energía podía realmente ayudar.",
+      "today": "Hoy ayudo a las personas a aliviar sus dolores, liberar sus tensiones emocionales y recuperar equilibrio y serenidad gracias a sesiones personalizadas, adaptadas a las necesidades físicas como emocionales."
+    },
+    "cta": {
+      "title": "¡Su bienestar merece un lugar !",
+      "subtitle": "Cuide de su energía.",
+      "questions": {
+        "difficult": "¿Está atravesando un **período difícil o doloroso** ?",
+        "emotions": "¿Tiene dificultades para **gestionar sus emociones** ?",
+        "pause": "¿Siente la necesidad de hacer una **pausa**, de recentrarse, de recuperar un **equilibrio físico, emocional y mental** ?"
+      },
+      "accompaniment": "Le acompaño con dulzura y benevolencia en este camino hacia un **bienestar duradero**."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "No dude en contactarme para cualquier pregunta o para reservar una cita",
+    "info": {
+      "title": "Información de contacto",
+      "address": "13 rue du Siège",
+      "city": "64700 Hendaya",
+      "phone": "Teléfono",
+      "email": "Email",
+      "schedule": "Consultas con cita previa de lunes a sábado"
+    },
+    "map": {
+      "title": "Cómo encontrarme"
+    }
+  },
+  "practices": {
+    "title": "Mis prácticas",
+    "magnetism": {
+      "title": "Magnetismo y cuidados energéticos",
+      "metaphor": "Hacer un cuidado energético es como reorganizar los cables eléctricos de una casa — ayudamos a que la corriente pase mejor.",
+      "intro": "Al igual que la respiración o la circulación de la sangre, cada ser humano dispone de una energía en movimiento constante.",
+      "description": "Cuando esta energía circula libremente, uno se siente en forma, tranquilo, alineado. Sin embargo, cuando aparecen bloqueos (por el estrés, la fatiga, las emociones...), pueden provocar dolores, enfermedades o un malestar general.",
+      "role": "Mi papel, durante un cuidado energético, es ayudar al cuerpo a recuperar su equilibrio, ya sea **físico, emocional o mental**.",
+      "process": "Para ello, me conecto a su energía y detecto los puntos de bloqueo. Luego, como canal, **ayudo al cuerpo a liberar estos bloqueos, a recargarse de energía y a recuperar su fluidez natural, su bienestar interior.**",
+      "benefits": "Una sesión de magnetismo puede ofrecer numerosos beneficios :",
+      "benefitsList": [
+        "Reducción del dolor",
+        "Calma",
+        "Aceleración del proceso de curación",
+        "Mejora del sueño",
+        "Alivio del estrés",
+        "Recuperación de energía vital",
+        "Refuerzo de las defensas inmunitarias y del bienestar global"
+      ],
+      "complementary": "Práctica complementaria a la medicina tradicional:",
+      "complementaryNote": "Aunque **eficaces**, los cuidados energéticos se inscriben en un **enfoque de acompañamiento** y no sustituyen **en ningún caso un tratamiento médico.**",
+      "session": {
+        "title": "Desarrollo de una sesión",
+        "beginning": "Cada cuidado comienza con un **tiempo de intercambio benevolente.** Usted me comparte lo que vive, sus sensaciones, **sus expectativas**.",
+        "adaptation": "Este momento de escucha permite establecer una relación de confianza y **adaptar el cuidado** a su estado del momento. Por eso la primera cita suele ser un poco más larga.",
+        "during": "La sesión se desarrolla **vestido**, tumbado cómodamente en la mesa de cuidado y con música suave y relajante de fondo.",
+        "process": "Con movimientos de las manos por encima del cuerpo o con ligeros contactos, **canalizo y transmito la energía necesaria** para reequilibrar sus flujos energéticos.",
+        "intervention": "Intervengo en las zonas de tensión, los desequilibrios o los puntos específicos **según sus necesidades**.",
+        "sensations": "Durante el cuidado, puede sentir calor, hormigueo, pensamientos evasivos o simplemente una profunda relajación. Cada persona reacciona a su manera.",
+        "end": "Al final de la sesión, un tiempo de intercambio permite compartir sus sensaciones. Le explico el trabajo realizado y doy consejos simples para reforzar los efectos del cuidado."
+      },
+      "after": {
+        "title": "Después de la sesión",
+        "water": "Para apoyar la circulación de la energía y estabilizar los efectos del cuidado, se recomienda **beber mucha agua.**",
+        "benefits": "Los beneficios pueden manifestarse inmediatamente o en los días siguientes, el tiempo que **su energía se rearmonice plenamente**.",
+        "feelings": "Las sensaciones difieren según las personas en función de su estado energético, de la causa aliviada y por tanto del trabajo realizado juntos.",
+        "days": "En los 3-4 días después de la sesión, algunas personas sienten una relajación profunda, una ligera fatiga, un período de turbulencias, o por el contrario una vitalidad aumentada, más claridad mental y relacional.",
+        "sensitivity": "La expresión de una hipersensibilidad emocional también es frecuente.",
+        "oldPain": "A veces ocurre que antiguos dolores reaparezcan brevemente.",
+        "positive": "Estas señales son positivas y atestiguan el trabajo de reequilibrio en curso, es un paso casi obligatorio antes de alcanzar los frutos de nuestro trabajo.",
+        "frequency": "Según su situación, una sola sesión puede ser suficiente. En algunos casos, un acompañamiento en varias citas espaciadas de algunas semanas permite un trabajo más profundo y duradero."
+      }
+    },
+    "cutFire": {
+      "title": "Cortar el fuego",
+      "intro": "\"Cortar el fuego\" es una de las aplicaciones más conocidas del magnetismo por el gran público.",
+      "uses": "Esta práctica permite **aliviar las quemaduras domésticas**, pero también acompañar los efectos secundarios de tratamientos médicos (radioterapia, quimioterapia…), las quemaduras solares, ciertas afecciones de la piel (eczema, herpes zóster, herpes…), o las inflamaciones.",
+      "goal": "El objetivo es **reducir la sensación de calor, calmar el dolor y favorecer el proceso de cicatrización.**",
+      "location": "La intervención puede hacerse **en el consultorio o a distancia**, según la urgencia de la situación.",
+      "urgency": "Mi acción ayudando a **ralentizar la propagación del calor** en los tejidos, **una acción rápida es preferible** : cuanto antes se realice el cuidado, más rápidos y eficaces son los efectos.",
+      "sessions": "Según la gravedad de la quemadura, de la inflamación, pueden ser necesarias varias sesiones.",
+      "important": "Importante:",
+      "note": "Esta práctica no reemplaza los cuidados médicos, pero puede complementar eficazmente, mejorando el confort de la persona y acelerando el proceso de recuperación."
+    },
+    "remote": {
+      "title": "Cuidados a distancia",
+      "intro": "La energía no estando limitada por el espacio, los **cuidados a distancia** funcionan según el mismo principio que en presencia.",
+      "process": "Al igual que en el consultorio, me conecto a su energía para armonizar sus flujos energéticos, disolver los bloqueos y restaurar su vitalidad.",
+      "feelings": "Las sensaciones suelen ser similares: calor, calma, ligereza, serenidad…",
+      "efficiency": "Los efectos son **tan eficaces como un cuidado en presencia**.",
+      "before": "Antes de la sesión, intercambiamos por teléfono para **precisar su necesidad** y acordar un horario durante el cual estará tranquilo.",
+      "photos": "Luego necesito **dos fotos tomadas el mismo día**: una de la persona de cuerpo entero y otra de la zona a aliviar.",
+      "after": "Después del cuidado, volvemos a contactar para intercambiar sobre sus sensaciones y el trabajo realizado.",
+      "useful": "Los cuidados a distancia son particularmente útiles cuando un desplazamiento es difícil o cuando una intervención rápida es necesaria."
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "greeting": "Hola y bienvenido",
+    "intro": "Soy **Erika**, **magnetizadora** y **practicante en cuidados energéticos** instalada en **Hendaya**.",
+    "childhood": "Desde pequeña, crecí con la idea de que se podía **aliviar, calmar o curar con las manos**, con una presencia, con la energía. En mi familia, varias personas evolucionando en las **medicinas suaves** he escuchado frecuentemente intercambiar sobre experiencias, anécdotas, éxitos…",
+    "natural": "Era para mí algo natural… pero solo en los demás.",
+    "never": "Nunca me había autorizado a imaginar que esto podía **concernirme**, ni que yo también tenía **esta posibilidad de ayudar**.",
+    "background": "De naturaleza muy terrenal, antes de emprender este camino seguí un camino que no dejaba presagiar que trabajaría en la energía. Evolucioné varios años en el **comercio**, la **gestión** y el **servicio al cliente**.",
+    "human": "Oficios muy humanos, donde me gustó crear vínculos, acompañar, comprender, apoyar.",
+    "already": "Sin saberlo, ya estaba escuchando, tranquilizando, calmando — simplemente en otro marco.",
+    "heart": "Aunque mis actividades parecían alejadas del magnetismo, lo **humano siempre ha estado en el corazón de mis elecciones profesionales**. Siempre tuve esta facilidad para acoger las emociones y las necesidades de los demás, para sentir lo que pasaba detrás de las palabras (pero también los males), incluso cuando no se expresaban.",
+    "revelation": {
+      "title": "Cuando la evidencia se revela",
+      "text": "Las pruebas personales, las experiencias y los encuentros, me han llevado progresivamente hacia la energía — como si este camino me esperara desde hace mucho tiempo.",
+      "realization": "Con el tiempo, me di cuenta de que esta sensibilidad, que consideraba como \"normal\", era en realidad una **capacidad que pedía expresarse plenamente**.",
+      "decision": "Tomar este camino no fue una decisión impulsiva, sino una **evidencia que se impuso suavemente**.",
+      "training": "Entonces emprendí formarme, comprender, recentrarme y afinar lo que sentía desde siempre. Y… cuando finalmente me autoricé a explorar esta vía, **todo fue muy rápido**.",
+      "first": "Desde los **primeros ejercicios**, las primeras sensaciones, los **primeros cuidados**… viví como una **revelación**. Como si esta práctica siempre hubiera estado ahí, esperando, lista para revelarse.",
+      "today": "Hoy acompaño a las personas que desean **aliviar sus dolores físicos, calmar sus emociones y recuperar un equilibrio global** en su vida.",
+      "therapist": "Como **terapeuta energética**, le propongo sesiones personalizadas para ayudarle a **rearmonizar su energía**, a **liberar las tensiones** y a **recuperar vitalidad y serenidad** en el día a día.",
+      "invitation": "Cada encuentro es una invitación a recuperar su equilibrio, su ligereza y su energía vital.",
+      "pleasure": "Con el placer de acompañarle."
+    },
+    "complementary": "Práctica complementaria a la medicina tradicional:",
+    "complementaryNote": "Aunque **eficaces**, los cuidados energéticos se inscriben en un **enfoque de acompañamiento** y no sustituyen **en ningún caso un tratamiento médico.**"
+  },
+  "rates": {
+    "title": "Tarifas",
+    "subtitle": "Tarifas de las sesiones",
+    "table": {
+      "service": "Prestación",
+      "duration": "Duración",
+      "price": "Tarifa",
+      "action": "Acción"
+    },
+    "services": {
+      "adult": {
+        "name": "Magnetismo / Cuidados energéticos (Adulto)",
+        "duration": "1h – 1h30",
+        "price": "70€"
+      },
+      "child": {
+        "name": "Magnetismo / Cuidados energéticos (Menos de 14 años)",
+        "duration": "30 min – 1h",
+        "price": "60€"
+      },
+      "cutFire": {
+        "name": "Cortar el fuego",
+        "duration": "En función del número de sesiones necesarias",
+        "price": "Sobre presupuesto"
+      }
+    },
+    "bookAppointment": "Reservar cita",
+    "contactMe": "Contácteme"
+  },
+  "reviews": {
+    "title": "Dejar una opinión",
+    "subtitle": "Su opinión me ayuda a mejorar mis servicios",
+    "description": "Si se ha beneficiado de mis cuidados, no dude en compartir su experiencia en Google Opiniones.",
+    "button": "Dejar una opinión en Google"
   }
 }

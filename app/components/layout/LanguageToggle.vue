@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useI18n } from "#imports";
-
 const { locale, locales, setLocale } = useI18n();
 
 const switchLanguage = (targetLocale: string) => {

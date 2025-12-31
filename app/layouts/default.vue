@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useI18n, useLocalePath } from "#imports";
-import LanguageToggle from "~/components/layout/LanguageToggle.vue";
-
 const { t } = useI18n();
 const localePath = useLocalePath();
 </script>
