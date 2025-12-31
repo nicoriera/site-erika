@@ -1,0 +1,6 @@
+# Redirections pour Cloudflare Pages
+# Support i18n et fallback SPA
+
+/es/*  /es/:splat  200
+/*     /index.html 200
+
