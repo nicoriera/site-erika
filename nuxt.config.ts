@@ -52,4 +52,24 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://erika-diaz-de-cerio.fr",
     },
   },
+  // Optimisation pour la génération statique
+  nitro: {
+    prerender: {
+      crawlLinks: true, // Crawler les liens pour pré-rendre toutes les pages
+      routes: [
+        '/',
+        '/es',
+        '/a-propos',
+        '/es/a-propos',
+        '/mes-pratiques',
+        '/es/mes-pratiques',
+        '/tarifs',
+        '/es/tarifs',
+        '/contact',
+        '/es/contact',
+        '/avis',
+        '/es/avis',
+      ],
+    },
+  },
 });

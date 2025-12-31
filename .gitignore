@@ -6,6 +6,14 @@
 .cache
 dist
 
+# Generated files
+
+# Documentation de déploiement (gardée en local)
+DEPLOYMENT.md
+NETLIFY_SETUP.md
+BRIEF.md
+CONTEXTE.md
+
 # Node dependencies
 node_modules
 
