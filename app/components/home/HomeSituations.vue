@@ -1,12 +1,38 @@
 <script setup lang="ts">
-const { t } = useI18n();
+const { t, tm } = useI18n();
 
-const physicalItems = computed(() => 
-  t("home.situations.physical.items", {}, { returnObjects: true }) as string[]
-);
-const emotionalItems = computed(() => 
-  t("home.situations.emotional.items", {}, { returnObjects: true }) as string[]
-);
+// Fonction helper pour extraire les strings depuis les traductions
+const extractTranslationItems = (result: unknown): string[] => {
+  if (!Array.isArray(result)) {
+    return [];
+  }
+
+  return result.map((item: unknown): string => {
+    if (typeof item === "string") {
+      return item;
+    }
+
+    if (typeof item === "object" && item !== null) {
+      const obj = item as Record<string, unknown>;
+      const body = obj.body as { static?: string } | undefined;
+      const loc = obj.loc as { source?: string } | undefined;
+
+      return body?.static || loc?.source || String(item);
+    }
+
+    return String(item);
+  });
+};
+
+const physicalItems = computed((): string[] => {
+  const result = tm("home.situations.physical.items") as unknown;
+  return extractTranslationItems(result);
+});
+
+const emotionalItems = computed((): string[] => {
+  const result = tm("home.situations.emotional.items") as unknown;
+  return extractTranslationItems(result);
+});
 </script>
 
 <template>

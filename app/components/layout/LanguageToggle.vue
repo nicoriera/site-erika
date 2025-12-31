@@ -1,25 +1,30 @@
 <script setup lang="ts">
+interface LocaleItem {
+  code: string;
+  name?: string;
+}
+
 const { locale, locales, setLocale } = useI18n();
 
 const switchLanguage = (targetLocale: string) => {
   setLocale(targetLocale as "fr" | "es");
 };
 
-const isActive = (localeCode: string) => {
+const isActive = (localeCode: string): boolean => {
   return locale.value === localeCode;
 };
 
-const getLocaleCode = (localeItem: any): string => {
+const getLocaleCode = (localeItem: string | LocaleItem): string => {
   if (typeof localeItem === "string") return localeItem;
   return localeItem.code || "";
 };
 
-const getLocaleLabel = (localeItem: any): string => {
+const getLocaleLabel = (localeItem: string | LocaleItem): string => {
   const code = getLocaleCode(localeItem);
   return code.toUpperCase();
 };
 
-const getLocaleName = (localeItem: any): string => {
+const getLocaleName = (localeItem: string | LocaleItem): string => {
   if (typeof localeItem === "string") return localeItem;
   return localeItem.name || localeItem.code || "";
 };
