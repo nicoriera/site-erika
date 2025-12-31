@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "practices": "Mis prácticas",
+    "rates": "Tarifas",
+    "reviews": "Opiniones",
+    "contact": "Contacto"
+  },
+  "header": {
+    "subtitle": "Magnetizadora y practicante en cuidados energéticos – Hendaya",
+    "bookAppointment": "Reservar cita"
+  },
+  "footer": {
+    "title": "Erika Diaz de Cerio – Magnetizadora",
+    "address": "13 rue du Siège",
+    "city": "64700 Hendaya",
+    "phone": "Tel :",
+    "email": "Email :",
+    "consultations": "Consultas",
+    "consultationsSchedule": "De lunes a sábado con cita previa.",
+    "parking": "Estacionamiento gratuito en la calle.",
+    "bus": "Parada Joncaux (autobús n°14) a 50m.",
+    "payments": "Pagos",
+    "paymentsMethods": "Efectivo, cheque, Wero.",
+    "paymentsRemote": "A distancia : Wero o transferencia.",
+    "copyright": "© {year} – Sitio web realizado con Nuxt."
+  },
+  "pages": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "practices": "Mis prácticas",
+    "rates": "Tarifas",
+    "reviews": "Opiniones",
+    "contact": "Contacto"
+  },
+  "meta": {
+    "title": "Erika Diaz de Cerio",
+    "description": "Erika Diaz de Cerio - Magnetizadora en Hendaya"
+  },
+  "common": {
+    "readMore": "Saber más",
+    "contact": "Contáctame",
+    "bookAppointment": "Reservar cita"
+  }
+}
