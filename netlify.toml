@@ -1,6 +1,9 @@
 [build]
-  command = "npm run generate"
+  command = "npm ci && npm run generate"
   publish = ".output/public"
+
+[build.environment]
+  NODE_VERSION = "20"
 
 # Redirections pour i18n
 # Les routes statiques sont déjà générées par Nuxt, pas besoin de fallback SPA
