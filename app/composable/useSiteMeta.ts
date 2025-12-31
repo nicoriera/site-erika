@@ -1,6 +1,10 @@
+import { useI18n } from "#imports";
+
 export const useSiteMeta = () => {
+  const { t } = useI18n();
+
   return {
-    title: "Erika Diaz de Cerio",
-    description: "Erika Diaz de Cerio",
+    title: t("meta.title"),
+    description: t("meta.description"),
   };
 };

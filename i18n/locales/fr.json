@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "practices": "Mes pratiques",
+    "rates": "Tarifs",
+    "reviews": "Avis",
+    "contact": "Contact"
+  },
+  "header": {
+    "subtitle": "Magnétiseuse & praticienne en soins énergétiques – Hendaye",
+    "bookAppointment": "Prendre RDV"
+  },
+  "footer": {
+    "title": "Erika Diaz de Cerio – Magnétiseuse",
+    "address": "13 rue du Siège",
+    "city": "64700 Hendaye",
+    "phone": "Tél :",
+    "email": "Email :",
+    "consultations": "Consultations",
+    "consultationsSchedule": "Du lundi au samedi sur rendez-vous.",
+    "parking": "Stationnement gratuit dans la rue.",
+    "bus": "Arrêt Joncaux (bus n°14) à 50m.",
+    "payments": "Paiements",
+    "paymentsMethods": "Espèces, chèque, Wero.",
+    "paymentsRemote": "A distance : Wero ou virement.",
+    "copyright": "© {year} – Site vitrine réalisé avec Nuxt."
+  },
+  "pages": {
+    "home": "Accueil",
+    "about": "À propos",
+    "practices": "Mes pratiques",
+    "rates": "Tarifs",
+    "reviews": "Avis",
+    "contact": "Contact"
+  },
+  "meta": {
+    "title": "Erika Diaz de Cerio",
+    "description": "Erika Diaz de Cerio - Magnétiseuse à Hendaye"
+  },
+  "common": {
+    "readMore": "En savoir plus",
+    "contact": "Contactez-moi",
+    "bookAppointment": "Prendre rendez-vous"
+  }
+}
