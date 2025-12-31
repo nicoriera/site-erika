@@ -59,4 +59,4 @@ Border radius custom : `xl` (12px), `2xl` (20px)
 
 - Nuxt 4 utilise la structure `app/` (pas de `pages/` ou `layouts/` à la racine)
 - Le layout utilise `<slot />`, pas `<NuxtPage />` (c'est `app.vue` qui gère `<NuxtPage />`)
-- Tailwind scanne `app/**/*.{vue,js,ts}`
+- Tailwind scanne `app//*.{vue,js,ts}`

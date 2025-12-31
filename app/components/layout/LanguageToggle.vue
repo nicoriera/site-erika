@@ -1,13 +1,32 @@
 <script setup lang="ts">
+import { useI18n, useSwitchLocalePath, useLocalePath } from "#imports";
+
 interface LocaleItem {
   code: string;
   name?: string;
 }
 
-const { locale, locales, setLocale } = useI18n();
+const { locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
+const localePath = useLocalePath();
 
 const switchLanguage = (targetLocale: string) => {
-  setLocale(targetLocale as "fr" | "es");
+  const targetLocaleCode = targetLocale as "fr" | "es";
+
+  // Ne rien faire si on clique sur la langue déjà active
+  if (locale.value === targetLocaleCode) {
+    return;
+  }
+
+  // Obtenir le chemin dans la nouvelle locale
+  const newPath = switchLocalePath(targetLocaleCode);
+
+  if (!newPath) {
+    return;
+  }
+
+  // Naviguer vers la nouvelle URL avec le bon préfixe
+  navigateTo(newPath);
 };
 
 const isActive = (localeCode: string): boolean => {
@@ -39,11 +58,12 @@ const getLocaleName = (localeItem: string | LocaleItem): string => {
       v-for="localeItem in locales"
       :key="getLocaleCode(localeItem)"
       @click="switchLanguage(getLocaleCode(localeItem))"
+      :disabled="isActive(getLocaleCode(localeItem))"
       :class="[
-        'relative px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-200 ease-in-out min-w-[2.5rem] flex items-center justify-center',
+        'relative px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-200 ease-in-out min-w-[2.5rem] min-h-[24px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2',
         isActive(getLocaleCode(localeItem))
-          ? 'bg-sage text-white shadow-sm scale-105'
-          : 'text-coffee/70 hover:text-coffee hover:bg-sand',
+          ? 'bg-sage text-white shadow-sm scale-105 cursor-default'
+          : 'text-coffee/70 hover:text-coffee hover:bg-sand cursor-pointer',
       ]"
       :aria-label="`Changer la langue vers ${getLocaleName(localeItem)}`"
       :aria-pressed="isActive(getLocaleCode(localeItem))">

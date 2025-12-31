@@ -1,8 +1,16 @@
-export const useSiteMeta = (title?: string, description?: string) => {
-  const { t } = useI18n();
-
+export const useSiteMeta = (title: string, description: string) => {
   useSeoMeta({
-    title: title || t("meta.title"),
-    description: description || t("meta.description"),
+    title,
+    description,
+  });
+
+  useHead({
+    title,
+    meta: [
+      {
+        name: "description",
+        content: description,
+      },
+    ],
   });
 };

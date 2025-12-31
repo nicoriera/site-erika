@@ -34,7 +34,7 @@ const { t } = useI18n();
           href="https://www.resalib.fr"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center px-8 py-4 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-lg font-medium shadow-lg">
+          class="inline-flex items-center px-8 py-4 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-lg font-medium shadow-lg focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
           {{ t("header.bookAppointment") }}
         </a>
       </div>

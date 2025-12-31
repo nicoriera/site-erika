@@ -2,10 +2,10 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
+    "./components//*.{js,vue,ts}",
+    "./layouts//*.vue",
+    "./pages//*.vue",
+    "./plugins//*.{js,ts}",
     "./app.vue",
     "./error.vue",
   ],
@@ -28,6 +28,10 @@ export default {
         xl: "12px",
         "2xl": "20px",
       },
+      transitionProperty: {
+        colors: "color, background-color, border-color",
+      },
     },
   },
+  plugins: [],
 } satisfies Config;

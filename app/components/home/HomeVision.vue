@@ -56,7 +56,7 @@ const localePath = useLocalePath();
 
       <NuxtLink
         :to="localePath('/mes-pratiques')"
-        class="inline-flex items-center px-6 py-3 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors">
+        class="inline-flex items-center px-6 py-3 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
         {{ t("common.readMore") }}
       </NuxtLink>
     </div>
