@@ -26,7 +26,7 @@ useSiteMeta(t("pages.reviews"), t("meta.description"));
           href="https://www.google.com/maps/place/?q=Erika+Diaz+de+Cerio+Hendaye"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center px-8 py-4 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-lg font-medium shadow-lg">
+          class="inline-flex items-center px-8 py-4 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-lg font-medium shadow-lg focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
           {{ t("reviews.button") }}
         </a>
       </div>

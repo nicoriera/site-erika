@@ -4,7 +4,7 @@ Projet : site vitrine pour Erika Diaz de Cerio
 Techno : Nuxt 4 + Vue 3 + Tailwind CSS  
 Type : site statique, SEO-first, sans backend
 
-> 📋 **Référence complète** : Voir `BRIEF.md` pour le contenu détaillé de chaque page et section.
+> 📋 Référence complète : Voir `BRIEF.md` pour le contenu détaillé de chaque page et section.
 
 ## Objectifs
 
@@ -34,10 +34,10 @@ Type : site statique, SEO-first, sans backend
 
 ## Coordonnées
 
-- **Adresse** : 13 rue du Siège, 64700 Hendaye
-- **Téléphone** : 07 50 26 07 96
-- **Email** : erika.magnetiseuse@gmail.com ou soins.erika@gmail.com
-- **Horaires** : Consultations sur rendez-vous du lundi au samedi
+- Adresse : 13 rue du Siège, 64700 Hendaye
+- Téléphone : 07 50 26 07 96
+- Email : erika.magnetiseuse@gmail.com ou soins.erika@gmail.com
+- Horaires : Consultations sur rendez-vous du lundi au samedi
 
 ## Navigation
 

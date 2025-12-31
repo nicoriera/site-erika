@@ -24,16 +24,16 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
           <table class="w-full">
             <thead class="bg-sage-light/50">
               <tr>
-                <th class="px-6 py-4 text-left text-sm font-medium text-coffee">
+                <th class="px-6 py-4 text-left text-base font-medium text-coffee">
                   {{ t("rates.table.service") }}
                 </th>
-                <th class="px-6 py-4 text-left text-sm font-medium text-coffee">
+                <th class="px-6 py-4 text-left text-base font-medium text-coffee">
                   {{ t("rates.table.duration") }}
                 </th>
-                <th class="px-6 py-4 text-left text-sm font-medium text-coffee">
+                <th class="px-6 py-4 text-left text-base font-medium text-coffee">
                   {{ t("rates.table.price") }}
                 </th>
-                <th class="px-6 py-4 text-center text-sm font-medium text-coffee">
+                <th class="px-6 py-4 text-center text-base font-medium text-coffee">
                   {{ t("rates.table.action") }}
                 </th>
               </tr>
@@ -55,7 +55,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
                     href="https://www.resalib.fr"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center px-4 py-2 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-sm">
+                    class="inline-flex items-center px-4 py-2 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
                     {{ t("rates.bookAppointment") }}
                   </a>
                 </td>
@@ -76,7 +76,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
                     href="https://www.resalib.fr"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center px-4 py-2 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-sm">
+                    class="inline-flex items-center px-4 py-2 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
                     {{ t("rates.bookAppointment") }}
                   </a>
                 </td>
@@ -95,7 +95,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
                 <td class="px-6 py-4 text-center">
                   <NuxtLink
                     to="/contact"
-                    class="inline-flex items-center px-4 py-2 bg-terracotta text-white rounded-full hover:bg-terracotta/90 transition-colors text-sm">
+                    class="inline-flex items-center px-4 py-2 bg-terracotta text-white rounded-full hover:bg-terracotta/90 transition-colors text-base focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2 min-h-[44px]">
                     {{ t("rates.contactMe") }}
                   </NuxtLink>
                 </td>
@@ -107,7 +107,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
 
       <!-- Note -->
       <div class="bg-sage-light/30 rounded-2xl p-6 text-center">
-        <p class="text-sm text-coffee/70">
+        <p class="text-base text-coffee/70">
           {{ t("footer.paymentsMethods") }}<br />
           {{ t("footer.paymentsRemote") }}
         </p>

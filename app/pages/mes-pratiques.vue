@@ -41,20 +41,22 @@ const benefitsList = computed((): string[] => {
     </h1>
 
     <!-- Navigation rapide -->
-    <nav class="mb-12 flex flex-wrap justify-center gap-4">
+    <nav
+      class="mb-12 flex flex-wrap justify-center gap-4"
+      aria-label="Navigation rapide vers les sections">
       <NuxtLink
         to="#magnetisme"
-        class="px-4 py-2 bg-sage-light/30 text-coffee rounded-full hover:bg-sage-light/50 transition-colors text-sm">
+        class="px-4 py-2 bg-sage-light/30 text-coffee rounded-full hover:bg-sage-light/50 transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px] flex items-center">
         {{ t("practices.magnetism.title") }}
       </NuxtLink>
       <NuxtLink
         to="#couper-le-feu"
-        class="px-4 py-2 bg-sage-light/30 text-coffee rounded-full hover:bg-sage-light/50 transition-colors text-sm">
+        class="px-4 py-2 bg-sage-light/30 text-coffee rounded-full hover:bg-sage-light/50 transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px] flex items-center">
         {{ t("practices.cutFire.title") }}
       </NuxtLink>
       <NuxtLink
         to="#soins-distance"
-        class="px-4 py-2 bg-sage-light/30 text-coffee rounded-full hover:bg-sage-light/50 transition-colors text-sm">
+        class="px-4 py-2 bg-sage-light/30 text-coffee rounded-full hover:bg-sage-light/50 transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px] flex items-center">
         {{ t("practices.remote.title") }}
       </NuxtLink>
     </nav>
