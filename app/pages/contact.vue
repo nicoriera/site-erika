@@ -76,13 +76,7 @@ const mapSrc =
             <a
               href="mailto:erika.magnetiseuse@gmail.com"
               class="underline hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded">
-              erika.magnetiseuse@gmail.com
-            </a>
-            <br />
-            <a
-              href="mailto:soins.erika@gmail.com"
-              class="underline hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded">
-              soins.erika@gmail.com
+              soins.erikaddc@gmail.com
             </a>
           </div>
 
@@ -120,7 +114,9 @@ const mapSrc =
                 stroke-width="2"
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
-            <p class="text-base">{{ t("contact.map.loading") || "Chargement..." }}</p>
+            <p class="text-base">
+              {{ t("contact.map.loading") || "Chargement..." }}
+            </p>
           </div>
 
           <!-- Iframe chargée uniquement quand visible -->

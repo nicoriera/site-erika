@@ -8,7 +8,7 @@
     "contact": "Contact"
   },
   "header": {
-    "subtitle": "Magnétiseuse & praticienne en soins énergétiques",
+    "subtitle": "Magnétisme et soins énergétiques",
     "bookAppointment": "Prendre RDV"
   },
   "footer": {
@@ -62,8 +62,9 @@
   "home": {
     "hero": {
       "name": "Erika Diaz de Cerio",
-      "title": "Magnétiseuse et praticienne en soins énergétiques",
-      "location": "Hendaye"
+      "title": "Magnétisme et soins énergétiques",
+      "location": "Hendaye",
+      "imageAlt": "Paysage côtier d'Hendaye au coucher de soleil avec plage, formations rocheuses et ciel nuageux"
     },
     "vision": {
       "title": "Ma vision du magnétisme",
@@ -81,7 +82,7 @@
       "belief": "Je crois profondément que chacun peut, à son rythme, retrouver son équilibre et sa vitalité - il suffit parfois d'un instant, d'une écoute, d'une séance, pour remettre l'énergie en mouvement."
     },
     "situations": {
-      "title": "Exemples de situations sur lesquelles nous pouvons travailler ensemble",
+      "title": "Exemples de situations sur lesquelles je peux vous accompagner :",
       "physical": {
         "title": "Soulagement physique et énergétique",
         "items": [
@@ -90,8 +91,9 @@
           "Maux de tête, migraines, céphalées",
           "Problèmes de peau",
           "Brûlures",
+          "Troubles digestifs",
           "Constipation",
-          "Effets secondaires liés à des traitements médicaux",
+          "Effets secondaires liés à des traitements médicaux (radiothérapie, chimiothérapie…)",
           "Douleurs menstruelles"
         ]
       },
@@ -110,24 +112,22 @@
       "title": "À propos de moi",
       "greeting": "Bonjour et bienvenue",
       "intro": "Je suis Erika, magnétiseuse et praticienne en soins énergétiques à Hendaye. Sensible depuis toujours au bien-être des autres, j'ai découvert que ma capacité à apaiser et rééquilibrer l'énergie pouvait véritablement aider.",
-      "today": "Aujourd'hui, j'aide les personnes à soulager leurs douleurs, libérer leurs tensions émotionnelles et retrouver équilibre et sérénité grâce à des séances personnalisées, adaptées aux besoins physiques comme émotionnels."
+      "today": "Aujourd'hui, j'aide les personnes à soulager leurs douleurs, libérer leurs tensions émotionnelles et retrouver équilibre et sérénité grâce à des séances personnalisées, adaptées aux besoins physiques comme émotionnels.",
+      "imageAlt": "Paysage côtier serein d'Hendaye avec nuages dorés et mer calme"
     },
     "cta": {
-      "title": "Votre bien être mérite une place !",
+      "title": "Votre bien être mérite une place.",
       "subtitle": "Prenez soin de votre énergie.",
-      "questions": {
-        "difficult": "Vous traversez une période difficile ou douloureuse ?",
-        "emotions": "Vous rencontrez du mal à gérer vos émotions ?",
-        "pause": "Vous ressentez le besoin de faire une pause, de vous recentrer, de retrouver un équilibre physique, émotionnel et mental ?"
-      },
-      "accompaniment": "Je vous accompagne avec douceur et bienveillance sur ce chemin vers du mieux-être durable."
+      "questions": "Si vous traversez une période difficile ou douloureuse, si vous avez du mal à gérer vos émotions, ou si vous ressentez le besoin de faire une pause, de vous recentrer et de retrouver votre équilibre physique, émotionnel et mental…",
+      "accompaniment": "Je vous accompagne avec douceur et bienveillance sur ce chemin vers un mieux-être durable."
     }
   },
   "practices": {
     "title": "Mes pratiques",
     "magnetism": {
       "title": "Magnétisme et soins énergétiques",
-      "metaphor": "Faire un soin énergétique c'est comme remettre de l'ordre dans les câbles électriques d'une maison — on aide le courant à mieux passer.",
+      "subtitle": "Les soins énergétiques étant parfois perçus comme une pratique mystique, j’aime utiliser une métaphore qui me parle particulièrement: ",
+      "metaphor": "\"Faire un soin énergétique c'est comme remettre de l'ordre dans les câbles électriques d'une maison — on aide le courant à mieux passer.\"",
       "intro": "Tout comme la respiration ou la circulation du sang, chaque être humain dispose d'une énergie en mouvement constant.",
       "description": "Quand cette énergie circule librement, on se sent en forme, calme, aligné. Cependant, lorsque des blocages apparaissent (par le stress, la fatigue, les émotions...), ils peuvent provoquer des douleurs, des maladies ou un mal-être général.",
       "role": "Mon rôle, lors d'un soin énergétique, est d'aider le corps à retrouver son équilibre qu'il soit physique, émotionnel ou mental.",
@@ -161,7 +161,7 @@
         "feelings": "Les ressentis diffèrent selon les personnes en fonction de votre état énergétique, de la cause soulagée et donc du travail effectué ensemble.",
         "days": "Dans les 3-4 jours après la séance, certaines personnes ressentent une détente profonde, une fatigue légère, une période de remous, ou bien au contraire une vitalité accrue, plus de clarté mentale et relationnelle.",
         "sensitivity": "L'expression d'une hypersensibilité émotionnelle est également fréquente.",
-        "oldPain": "Il arrive parfois que d'anciennes douleurs refassent brièvement surface.",
+        "oldPain": "Il arrive parfois que d'anciennes gênes refassent brièvement surface.",
         "positive": "Ces signaux sont positifs et attestent du travail de rééquilibrage en cours, c'est un passage quasi obligatoire avant d'atteindre les fruits de notre travail.",
         "frequency": "Selon votre situation, une seule séance peut suffire. Dans certains cas, un accompagnement sur plusieurs rendez-vous espacés de quelques semaines permet un travail plus profond et durable."
       }
@@ -213,7 +213,8 @@
       "pleasure": "Au plaisir de vous accompagner."
     },
     "complementary": "Pratique complémentaire à la médecine traditionnelle:",
-    "complementaryNote": "Bien qu'efficaces, les soins énergétiques s'inscrivent dans une démarche d'accompagnement et ne substituent en aucun cas un traitement médical."
+    "complementaryNote": "Bien qu'efficaces, les soins énergétiques s'inscrivent dans une démarche d'accompagnement et ne substituent en aucun cas un traitement médical.",
+    "cabinetImageAlt": "Paysage côtier paisible d'Hendaye au coucher de soleil"
   },
   "rates": {
     "title": "Tarifs",
@@ -238,7 +239,7 @@
       "cutFire": {
         "name": "Couper le feu",
         "duration": "En fonction du nombre de séances nécessaires",
-        "price": "Sur devis"
+        "price": ""
       }
     },
     "bookAppointment": "Prendre RDV",

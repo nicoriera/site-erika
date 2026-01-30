@@ -83,8 +83,12 @@ useSiteMeta(t("pages.about"), t("meta.description"));
 
       <!-- Photo cabinet -->
       <section class="text-center">
-        <div class="bg-sage-light/30 rounded-2xl aspect-[16/9] flex items-center justify-center max-w-3xl mx-auto">
-          <span class="text-coffee/40 text-sm">Photo cabinet</span>
+        <div class="rounded-2xl aspect-[16/9] overflow-hidden max-w-3xl mx-auto">
+          <img
+            src="/images/beach-sunset-reflections.png"
+            :alt="t('about.cabinetImageAlt')"
+            class="w-full h-full object-cover"
+          />
         </div>
       </section>
 

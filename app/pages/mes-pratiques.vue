@@ -72,7 +72,10 @@ const benefitsList = computed((): string[] => {
           <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-6">
             {{ t("practices.magnetism.title") }}
           </h2>
-          <p class="text-lg text-coffee/80 mb-6 italic">
+          <p class="text-lg text-coffee/80 mb-6 leading-relaxed">
+            {{ t("practices.magnetism.subtitle") }}
+          </p>
+          <p class="text-lg italic text-coffee/80 mb-6">
             {{ t("practices.magnetism.metaphor") }}
           </p>
           <p class="text-lg text-coffee/80 mb-6 leading-relaxed">
