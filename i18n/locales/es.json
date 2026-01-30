@@ -8,7 +8,7 @@
     "contact": "Contacto"
   },
   "header": {
-    "subtitle": "Magnetizadora y practicante en cuidados energéticos",
+    "subtitle": "Magnetismo y cuidados energéticos",
     "bookAppointment": "Reservar cita"
   },
   "footer": {
@@ -46,8 +46,9 @@
   "home": {
     "hero": {
       "name": "Erika Diaz de Cerio",
-      "title": "Magnetizadora y practicante en cuidados energéticos",
-      "location": "Hendaya"
+      "title": "Magnetismo y cuidados energéticos",
+      "location": "Hendaya",
+      "imageAlt": "Paisaje costero de Hendaya al atardecer con playa, formaciones rocosas y cielo nublado"
     },
     "vision": {
       "title": "Mi visión del magnetismo",
@@ -74,8 +75,9 @@
           "Dolores de cabeza, migrañas, cefaleas",
           "Problemas de piel",
           "Quemaduras",
+          "Trastornos digestivos",
           "Estreñimiento",
-          "Efectos secundarios relacionados con tratamientos médicos",
+          "Efectos secundarios relacionados con tratamientos médicos (radioterapia, quimioterapia…)",
           "Dolores menstruales"
         ]
       },
@@ -94,16 +96,13 @@
       "title": "Sobre mí",
       "greeting": "Hola y bienvenido",
       "intro": "Soy Erika, magnetizadora y practicante en cuidados energéticos en Hendaya. Sensible desde siempre al bienestar de los demás, descubrí que mi capacidad para calmar y reequilibrar la energía podía realmente ayudar.",
-      "today": "Hoy ayudo a las personas a aliviar sus dolores, liberar sus tensiones emocionales y recuperar equilibrio y serenidad gracias a sesiones personalizadas, adaptadas a las necesidades físicas como emocionales."
+      "today": "Hoy ayudo a las personas a aliviar sus dolores, liberar sus tensiones emocionales y recuperar equilibrio y serenidad gracias a sesiones personalizadas, adaptadas a las necesidades físicas como emocionales.",
+      "imageAlt": "Paisaje costero sereno de Hendaya con nubes doradas y mar tranquilo"
     },
     "cta": {
       "title": "¡Su bienestar merece un lugar !",
       "subtitle": "Cuide de su energía.",
-      "questions": {
-        "difficult": "¿Está atravesando un período difícil o doloroso ?",
-        "emotions": "¿Tiene dificultades para gestionar sus emociones ?",
-        "pause": "¿Siente la necesidad de hacer una pausa, de recentrarse, de recuperar un equilibrio físico, emocional y mental ?"
-      },
+      "questions": "Si está atravesando un período difícil o doloroso, si tiene dificultades para gestionar sus emociones, o si siente la necesidad de hacer una pausa, de recentrarse y de recuperar su equilibrio físico, emocional y mental…",
       "accompaniment": "Le acompaño con dulzura y benevolencia en este camino hacia un bienestar duradero."
     }
   },
@@ -127,6 +126,7 @@
     "title": "Mis prácticas",
     "magnetism": {
       "title": "Magnetismo y cuidados energéticos",
+      "subtitle": "Los cuidados energéticos siendo a veces percibidos como una práctica mística, me gusta usar una metáfora que me habla particularmente: ",
       "metaphor": "Hacer un cuidado energético es como reorganizar los cables eléctricos de una casa — ayudamos a que la corriente pase mejor.",
       "intro": "Al igual que la respiración o la circulación de la sangre, cada ser humano dispone de una energía en movimiento constante.",
       "description": "Cuando esta energía circula libremente, uno se siente en forma, tranquilo, alineado. Sin embargo, cuando aparecen bloqueos (por el estrés, la fatiga, las emociones...), pueden provocar dolores, enfermedades o un malestar general.",
@@ -213,7 +213,8 @@
       "pleasure": "Con el placer de acompañarle."
     },
     "complementary": "Práctica complementaria a la medicina tradicional:",
-    "complementaryNote": "Aunque eficaces, los cuidados energéticos se inscriben en un enfoque de acompañamiento y no sustituyen en ningún caso un tratamiento médico."
+    "complementaryNote": "Aunque eficaces, los cuidados energéticos se inscriben en un enfoque de acompañamiento y no sustituyen en ningún caso un tratamiento médico.",
+    "cabinetImageAlt": "Paisaje costero tranquilo de Hendaya al atardecer"
   },
   "rates": {
     "title": "Tarifas",
@@ -238,7 +239,7 @@
       "cutFire": {
         "name": "Cortar el fuego",
         "duration": "En función del número de sesiones necesarias",
-        "price": "Sobre presupuesto"
+        "price": ""
       }
     },
     "bookAppointment": "Reservar cita",
