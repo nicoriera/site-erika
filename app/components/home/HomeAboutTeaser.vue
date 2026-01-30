@@ -7,10 +7,14 @@ const localePath = useLocalePath();
   <section class="py-16 mb-16">
     <div class="max-w-4xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-        <!-- Image placeholder - à gauche -->
+        <!-- Image - à gauche -->
         <div class="order-2 md:order-1">
-          <div class="bg-sage-light/30 rounded-2xl aspect-[4/5] flex items-center justify-center">
-            <span class="text-coffee/40 text-sm">Photo Erika</span>
+          <div class="rounded-2xl aspect-[4/5] overflow-hidden">
+            <img
+              src="/images/hero-beach-sunset.png"
+              :alt="t('home.aboutTeaser.imageAlt')"
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
 

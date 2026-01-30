@@ -215,7 +215,7 @@ const isActiveRoute = (path: string): boolean => {
             <a
               href="mailto:erika.magnetiseuse@gmail.com"
               class="underline hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded">
-              erika.magnetiseuse@gmail.com
+              soins.erikaddc@gmail.com
             </a>
           </p>
         </div>
