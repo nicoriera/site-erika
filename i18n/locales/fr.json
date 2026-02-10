@@ -194,6 +194,7 @@
   },
   "about": {
     "title": "À propos de moi",
+    "pageIntro": "Mon parcours et ma vision du soin énergétique.",
     "greeting": "Bonjour et bienvenue",
     "intro": "Je suis Erika, magnétiseuse et praticienne en soins énergétiques installée à Hendaye.",
     "childhood": "Depuis petite, j'ai grandi avec l'idée que l'on pouvait soulager, apaiser ou guérir avec les mains, avec une présence, avec l'énergie. Dans ma famille, plusieurs personnes évoluant dans les médecines douces j'ai fréquemment entendu échanger sur des expériences, des anecdotes, des réussites…",
@@ -217,7 +218,8 @@
     },
     "complementary": "Pratique complémentaire à la médecine traditionnelle:",
     "complementaryNote": "Bien qu'efficaces, les soins énergétiques s'inscrivent dans une démarche d'accompagnement et ne substituent en aucun cas un traitement médical.",
-    "cabinetImageAlt": "Paysage côtier paisible d'Hendaye au coucher de soleil"
+    "cabinetImageAlt": "Paysage côtier paisible d'Hendaye au coucher de soleil",
+    "profileImageAlt": "Erika Diaz de Cerio, magnétiseuse et praticienne en soins énergétiques"
   },
   "rates": {
     "title": "Tarifs",

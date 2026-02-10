@@ -4,12 +4,13 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <section class="py-16 mb-16">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+  <section class="py-16 md:py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
         <!-- Image - à gauche -->
         <div class="order-2 md:order-1">
-          <div class="rounded-2xl aspect-[4/5] overflow-hidden">
+          <div
+            class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 aspect-[4/5]">
             <img
               src="/images/photo-erika.png"
               :alt="t('home.aboutTeaser.imageAlt')"
@@ -19,7 +20,8 @@ const localePath = useLocalePath();
 
         <!-- Contenu - à droite -->
         <div class="order-1 md:order-2">
-          <h2 class="font-serif text-3xl md:text-3xl text-coffee mb-6">
+          <h2
+            class="font-serif text-3xl md:text-4xl text-coffee mb-6 leading-tight">
             {{ t("home.aboutTeaser.title") }}
           </h2>
 

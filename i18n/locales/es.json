@@ -192,6 +192,7 @@
   },
   "about": {
     "title": "Sobre mí",
+    "pageIntro": "Mi trayectoria y mi visión del cuidado energético.",
     "greeting": "Hola y bienvenido",
     "intro": "Soy Erika, magnetizadora y practicante en cuidados energéticos instalada en Hendaya.",
     "childhood": "Desde pequeña, crecí con la idea de que se podía aliviar, calmar o curar con las manos, con una presencia, con la energía. En mi familia, varias personas evolucionando en las medicinas suaves he escuchado frecuentemente intercambiar sobre experiencias, anécdotas, éxitos…",
@@ -215,7 +216,8 @@
     },
     "complementary": "Práctica complementaria a la medicina tradicional:",
     "complementaryNote": "Aunque eficaces, los cuidados energéticos se inscriben en un enfoque de acompañamiento y no sustituyen en ningún caso un tratamiento médico.",
-    "cabinetImageAlt": "Paisaje costero tranquilo de Hendaya al atardecer"
+    "cabinetImageAlt": "Paisaje costero tranquilo de Hendaya al atardecer",
+    "profileImageAlt": "Erika Diaz de Cerio, magnetizadora y practicante en cuidados energéticos"
   },
   "rates": {
     "title": "Tarifas",
