@@ -15,7 +15,8 @@ const localePath = useLocalePath();
     </div>
 
     <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
-      <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-8">
+      <h2
+        class="font-serif text-3xl md:text-4xl text-coffee mb-8 leading-tight">
         {{ t("home.vision.title") }}
       </h2>
 
@@ -27,7 +28,17 @@ const localePath = useLocalePath();
         {{ t("home.vision.description") }}
       </p>
 
-      <div class="bg-sand-light/50 rounded-2xl p-8 md:p-12 mb-8">
+      <div
+        class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 mb-8">
+        <img
+          src="/images/photo-erika-hands.png"
+          alt="Magnétisme et soins énergétiques"
+          class="w-full aspect-video object-cover"
+          aria-hidden="true" />
+      </div>
+
+      <div
+        class="bg-sand-light/50 rounded-2xl p-8 md:p-12 mb-8 border border-sand/50">
         <p class="text-lg text-coffee/80 mb-6">
           {{ t("home.vision.subtitle") }} {{ t("home.vision.welcome") }}
         </p>
@@ -37,21 +48,27 @@ const localePath = useLocalePath();
         </p>
 
         <ul class="text-left space-y-3 mb-8 max-w-2xl mx-auto">
-          <li class="flex items-start">
-            <span class="text-sage-dark mr-3">•</span>
-            <span class="text-coffee/80">{{
+          <li class="flex items-start gap-3">
+            <span
+              class="mt-2 w-1.5 h-1.5 rounded-full bg-sage-dark shrink-0"
+              aria-hidden="true" />
+            <span class="text-coffee/80 leading-relaxed">{{
               t("home.vision.goals.blockages")
             }}</span>
           </li>
-          <li class="flex items-start">
-            <span class="text-sage-dark mr-3">•</span>
-            <span class="text-coffee/80">{{
+          <li class="flex items-start gap-3">
+            <span
+              class="mt-2 w-1.5 h-1.5 rounded-full bg-sage-dark shrink-0"
+              aria-hidden="true" />
+            <span class="text-coffee/80 leading-relaxed">{{
               t("home.vision.goals.circulation")
             }}</span>
           </li>
-          <li class="flex items-start">
-            <span class="text-sage-dark mr-3">•</span>
-            <span class="text-coffee/80">{{
+          <li class="flex items-start gap-3">
+            <span
+              class="mt-2 w-1.5 h-1.5 rounded-full bg-sage-dark shrink-0"
+              aria-hidden="true" />
+            <span class="text-coffee/80 leading-relaxed">{{
               t("home.vision.goals.harmony")
             }}</span>
           </li>

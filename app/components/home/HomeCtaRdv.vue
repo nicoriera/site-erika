@@ -3,10 +3,12 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <section class="py-16 mb-16">
+  <section class="py-16 md:py-20">
     <div class="max-w-3xl mx-auto px-4">
-      <div class="bg-sage-light/40 rounded-2xl p-8 md:p-12 text-center">
-        <h2 class="font-serif text-3xl md:text-3xl text-coffee mb-4">
+      <div
+        class="bg-sage-light/40 rounded-2xl p-8 md:p-12 text-center border border-sage/10 shadow-lg shadow-coffee/5">
+        <h2
+          class="font-serif text-3xl md:text-4xl text-coffee mb-6 leading-tight">
           {{ t("home.cta.title") }}
         </h2>
 
@@ -14,7 +16,7 @@ const { t } = useI18n();
           {{ t("home.cta.subtitle") }}
         </p>
 
-        <p class="text-lg text-coffee/80 mb-8 leading-relaxed max-w-xl mx-auto">
+        <p class="text-lg text-coffee/80 mb-8 leading-relaxed max-w-xl mx-auto whitespace-pre-line">
           {{ t("home.cta.questions") }}
         </p>
 
