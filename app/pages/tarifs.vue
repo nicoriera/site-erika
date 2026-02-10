@@ -8,7 +8,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
 
 <template>
   <div class="max-w-5xl mx-auto px-4 py-16">
-    <h1 class="font-serif text-4xl md:text-5xl text-coffee mb-4 text-center">
+    <h1 class="font-serif text-3xl md:text-4xl text-coffee mb-4 text-center">
       {{ t("rates.title") }}
     </h1>
     <p class="text-lg text-coffee/80 mb-12 text-center">
@@ -91,8 +91,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
                 <td class="px-6 py-4 text-coffee/80 text-center">
                   {{ t("rates.services.cutFire.duration") }}
                 </td>
-                <td class="px-6 py-4 font-medium text-coffee">
-                </td>
+                <td class="px-6 py-4 font-medium text-coffee"></td>
                 <td class="px-6 py-4 text-center">
                   <NuxtLink
                     to="/contact"

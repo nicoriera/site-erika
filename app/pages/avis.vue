@@ -8,7 +8,7 @@ useSiteMeta(t("pages.reviews"), t("meta.description"));
 
 <template>
   <div class="max-w-5xl mx-auto px-4 py-16">
-    <h1 class="font-serif text-4xl md:text-5xl text-coffee mb-4 text-center">
+    <h1 class="font-serif text-3xl md:text-4xl text-coffee mb-4 text-center">
       {{ t("reviews.title") }}
     </h1>
     <p class="text-lg text-coffee/80 mb-8 text-center">

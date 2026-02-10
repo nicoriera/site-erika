@@ -8,7 +8,7 @@ useSiteMeta(t("pages.about"), t("meta.description"));
 
 <template>
   <div class="max-w-5xl mx-auto px-4 py-16">
-    <h1 class="font-serif text-4xl md:text-5xl text-coffee mb-8 text-center">
+    <h1 class="font-serif text-3xl md:text-4xl text-coffee mb-8 text-center">
       {{ t("about.title") }}
     </h1>
 
@@ -39,7 +39,8 @@ useSiteMeta(t("pages.about"), t("meta.description"));
       <!-- Parcours professionnel -->
       <section class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div class="order-2 md:order-1">
-          <div class="bg-sage-light/30 rounded-2xl aspect-[4/5] flex items-center justify-center">
+          <div
+            class="bg-sage-light/30 rounded-2xl aspect-[4/5] flex items-center justify-center">
             <span class="text-coffee/40 text-sm">Photo Erika</span>
           </div>
         </div>
@@ -61,7 +62,8 @@ useSiteMeta(t("pages.about"), t("meta.description"));
 
       <!-- Quand l'évidence se révèle -->
       <section class="bg-sand-light/50 rounded-2xl p-8 md:p-12">
-        <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-8 text-center">
+        <h2
+          class="font-serif text-3xl md:text-3xl text-coffee mb-8 text-center">
           {{ t("about.revelation.title") }}
         </h2>
         <div class="space-y-6 text-coffee/80 leading-relaxed">
@@ -83,17 +85,18 @@ useSiteMeta(t("pages.about"), t("meta.description"));
 
       <!-- Photo cabinet -->
       <section class="text-center">
-        <div class="rounded-2xl aspect-[16/9] overflow-hidden max-w-3xl mx-auto">
+        <div
+          class="rounded-2xl aspect-[16/9] overflow-hidden max-w-3xl mx-auto">
           <img
             src="/images/beach-sunset-reflections.png"
             :alt="t('about.cabinetImageAlt')"
-            class="w-full h-full object-cover"
-          />
+            class="w-full h-full object-cover" />
         </div>
       </section>
 
       <!-- Note complémentaire -->
-      <section class="bg-sage-light/30 rounded-2xl p-6 italic text-sm text-coffee/70">
+      <section
+        class="bg-sage-light/30 rounded-2xl p-6 italic text-sm text-coffee/70">
         <p class="font-medium mb-2">{{ t("about.complementary") }}</p>
         <p>{{ t("about.complementaryNote") }}</p>
       </section>

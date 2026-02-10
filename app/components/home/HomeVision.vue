@@ -11,19 +11,18 @@ const localePath = useLocalePath();
         src="/images/field-sunset-ocean.png"
         alt=""
         class="w-full h-full object-cover"
-        aria-hidden="true"
-      />
+        aria-hidden="true" />
     </div>
-    
+
     <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
-      <h2 class="font-serif text-4xl md:text-5xl text-coffee mb-8">
+      <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-8">
         {{ t("home.vision.title") }}
       </h2>
-      
+
       <p class="text-lg text-coffee/80 mb-6 leading-relaxed">
         {{ t("home.vision.intro") }}
       </p>
-      
+
       <p class="text-lg text-coffee/80 mb-12 leading-relaxed">
         {{ t("home.vision.description") }}
       </p>
@@ -32,30 +31,36 @@ const localePath = useLocalePath();
         <p class="text-lg text-coffee/80 mb-6">
           {{ t("home.vision.subtitle") }} {{ t("home.vision.welcome") }}
         </p>
-        
+
         <p class="text-lg text-coffee/80 mb-6">
           {{ t("home.vision.session") }}
         </p>
-        
+
         <ul class="text-left space-y-3 mb-8 max-w-2xl mx-auto">
           <li class="flex items-start">
             <span class="text-sage-dark mr-3">•</span>
-            <span class="text-coffee/80">{{ t("home.vision.goals.blockages") }}</span>
+            <span class="text-coffee/80">{{
+              t("home.vision.goals.blockages")
+            }}</span>
           </li>
           <li class="flex items-start">
             <span class="text-sage-dark mr-3">•</span>
-            <span class="text-coffee/80">{{ t("home.vision.goals.circulation") }}</span>
+            <span class="text-coffee/80">{{
+              t("home.vision.goals.circulation")
+            }}</span>
           </li>
           <li class="flex items-start">
             <span class="text-sage-dark mr-3">•</span>
-            <span class="text-coffee/80">{{ t("home.vision.goals.harmony") }}</span>
+            <span class="text-coffee/80">{{
+              t("home.vision.goals.harmony")
+            }}</span>
           </li>
         </ul>
-        
+
         <p class="text-lg text-coffee/80 mb-6 leading-relaxed">
           {{ t("home.vision.moment") }}
         </p>
-        
+
         <p class="text-lg text-coffee/80 leading-relaxed">
           {{ t("home.vision.belief") }}
         </p>

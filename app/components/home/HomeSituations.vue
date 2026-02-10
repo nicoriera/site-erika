@@ -38,7 +38,7 @@ const emotionalItems = computed((): string[] => {
 <template>
   <section class="py-16 mb-16">
     <div class="max-w-5xl mx-auto px-4">
-      <h2 class="font-serif text-4xl md:text-5xl text-coffee mb-12 text-center">
+      <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-12 text-center">
         {{ t("home.situations.title") }}
       </h2>
 
