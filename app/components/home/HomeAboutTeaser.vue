@@ -13,25 +13,24 @@ const localePath = useLocalePath();
             <img
               src="/images/hero-beach-sunset.png"
               :alt="t('home.aboutTeaser.imageAlt')"
-              class="w-full h-full object-cover"
-            />
+              class="w-full h-full object-cover" />
           </div>
         </div>
 
         <!-- Contenu - à droite -->
         <div class="order-1 md:order-2">
-          <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-6">
+          <h2 class="font-serif text-3xl md:text-3xl text-coffee mb-6">
             {{ t("home.aboutTeaser.title") }}
           </h2>
-          
+
           <p class="text-lg text-coffee/80 mb-4 font-medium">
             {{ t("home.aboutTeaser.greeting") }},
           </p>
-          
+
           <p class="text-lg text-coffee/80 mb-6 leading-relaxed">
             {{ t("home.aboutTeaser.intro") }}
           </p>
-          
+
           <p class="text-lg text-coffee/80 mb-8 leading-relaxed">
             {{ t("home.aboutTeaser.today") }}
           </p>

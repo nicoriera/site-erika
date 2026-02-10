@@ -50,7 +50,9 @@ useHead({
 
 /* Transitions globales pour les liens */
 a {
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 /* Touch targets minimum 44x44px sur mobile */

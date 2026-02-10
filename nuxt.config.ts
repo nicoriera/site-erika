@@ -45,12 +45,19 @@ export default defineNuxtConfig({
           content: "Erika Diaz de Cerio, Magnétiseuse, Hendaye",
         },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        {
+          rel: "apple-touch-icon",
+          href: "/images/logo-erika.png",
+        },
+      ],
     },
   },
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://erika-diaz-de-cerio.fr",
+      siteUrl:
+        process.env.NUXT_PUBLIC_SITE_URL || "https://erika-diaz-de-cerio.fr",
     },
   },
   // Optimisation pour la génération statique
@@ -59,18 +66,18 @@ export default defineNuxtConfig({
       crawlLinks: true, // Crawler les liens pour pré-rendre toutes les pages
       failOnError: false, // Ne pas échouer sur les erreurs pour voir toutes les routes
       routes: [
-        '/',
-        '/es',
-        '/a-propos',
-        '/es/a-propos',
-        '/mes-pratiques',
-        '/es/mes-pratiques',
-        '/tarifs',
-        '/es/tarifs',
-        '/contact',
-        '/es/contact',
-        '/avis',
-        '/es/avis',
+        "/",
+        "/es",
+        "/a-propos",
+        "/es/a-propos",
+        "/mes-pratiques",
+        "/es/mes-pratiques",
+        "/tarifs",
+        "/es/tarifs",
+        "/contact",
+        "/es/contact",
+        "/avis",
+        "/es/avis",
       ],
     },
   },

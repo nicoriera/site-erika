@@ -46,13 +46,16 @@ const isActiveRoute = (path: string): boolean => {
       class="border-b border-sand bg-sand-light/90 backdrop-blur sticky top-0 z-50">
       <nav
         class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <NuxtLink :to="localePath('/')" class="flex flex-col">
-          <span class="font-serif text-lg tracking-wide">
-            Erika Diaz de Cerio
-          </span>
-          <span class="text-xs text-coffee/70">
-            {{ t("header.subtitle") }}
-          </span>
+        <NuxtLink
+          :to="localePath('/')"
+          class="flex items-center shrink-0"
+          aria-label="Erika Diaz de Cerio - Accueil">
+          <img
+            src="/images/logo-erika.png"
+            alt="Erika Diaz de Cerio - Magnétisme et soins énergétiques"
+            class="h-14 md:h-16 w-auto"
+            width="180"
+            height="56" />
         </NuxtLink>
 
         <div class="flex items-center gap-4 md:gap-6">

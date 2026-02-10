@@ -22,7 +22,7 @@ onMounted(() => {
     },
     {
       rootMargin: "50px",
-    }
+    },
   );
 
   observer.observe(mapContainer.value);
@@ -38,7 +38,7 @@ const mapSrc =
 
 <template>
   <div class="max-w-5xl mx-auto px-4 py-16">
-    <h1 class="font-serif text-4xl text-coffee mb-4">
+    <h1 class="font-serif text-3xl text-coffee mb-4">
       {{ t("contact.title") }}
     </h1>
     <p class="text-lg text-coffee/80 mb-12">{{ t("contact.subtitle") }}</p>

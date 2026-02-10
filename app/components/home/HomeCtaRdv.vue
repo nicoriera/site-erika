@@ -6,10 +6,10 @@ const { t } = useI18n();
   <section class="py-16 mb-16">
     <div class="max-w-3xl mx-auto px-4">
       <div class="bg-sage-light/40 rounded-2xl p-8 md:p-12 text-center">
-        <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-4">
+        <h2 class="font-serif text-3xl md:text-3xl text-coffee mb-4">
           {{ t("home.cta.title") }}
         </h2>
-        
+
         <p class="text-xl text-coffee/80 mb-8">
           {{ t("home.cta.subtitle") }}
         </p>

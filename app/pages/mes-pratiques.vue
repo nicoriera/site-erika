@@ -34,7 +34,7 @@ const benefitsList = computed((): string[] => {
 
 <template>
   <div class="max-w-5xl mx-auto px-4 py-16">
-    <h1 class="font-serif text-4xl md:text-5xl text-coffee mb-8 text-center">
+    <h1 class="font-serif text-3xl md:text-4xl text-coffee mb-8 text-center">
       {{ t("practices.title") }}
     </h1>
 
@@ -69,7 +69,7 @@ const benefitsList = computed((): string[] => {
           </div>
         </div>
         <div class="order-1 md:order-2">
-          <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-6">
+          <h2 class="font-serif text-3xl md:text-3xl text-coffee mb-6">
             {{ t("practices.magnetism.title") }}
           </h2>
           <p class="text-lg text-coffee/80 mb-6 leading-relaxed">
@@ -183,7 +183,7 @@ const benefitsList = computed((): string[] => {
           </div>
         </div>
         <div class="order-2 md:order-1">
-          <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-6">
+          <h2 class="font-serif text-3xl md:text-3xl text-coffee mb-6">
             {{ t("practices.cutFire.title") }}
           </h2>
           <div class="space-y-4 text-coffee/80 leading-relaxed">
@@ -214,7 +214,7 @@ const benefitsList = computed((): string[] => {
           </div>
         </div>
         <div class="order-1 md:order-2">
-          <h2 class="font-serif text-3xl md:text-4xl text-coffee mb-6">
+          <h2 class="font-serif text-3xl md:text-3xl text-coffee mb-6">
             {{ t("practices.remote.title") }}
           </h2>
           <div class="space-y-4 text-coffee/80 leading-relaxed">
