@@ -13,14 +13,14 @@
   },
   "footer": {
     "title": "Erika Diaz de Cerio – Magnétiseuse",
-    "address": "13 rue du Siège",
+    "address": "14 boulevard du Général de Gaulle",
     "city": "64700 Hendaye",
     "phone": "Tél :",
     "email": "Email :",
     "consultations": "Consultations",
     "consultationsSchedule": "Du lundi au samedi sur rendez-vous.",
     "parking": "Stationnement gratuit dans la rue.",
-    "bus": "Arrêt Joncaux (bus n°14) à 50m.",
+    "bus": "Arrêt Ville (bus n°4 ou 15).",
     "payments": "Paiements",
     "paymentsMethods": "Espèces, chèque, Wero.",
     "paymentsRemote": "A distance : Wero ou virement.",
@@ -48,7 +48,7 @@
     "subtitle": "N'hésitez pas à me contacter pour toute question ou pour prendre rendez-vous",
     "info": {
       "title": "Informations de contact",
-      "address": "13 rue du Siège",
+      "address": "14 boulevard du Général de Gaulle",
       "city": "64700 Hendaye",
       "phone": "Téléphone",
       "email": "Email",
@@ -94,7 +94,8 @@
           "Troubles digestifs",
           "Constipation",
           "Effets secondaires liés à des traitements médicaux (radiothérapie, chimiothérapie…)",
-          "Douleurs menstruelles"
+          "Douleurs menstruelles",
+          "..."
         ]
       },
       "emotional": {
@@ -104,7 +105,8 @@
           "Manque d'estime de soi",
           "Traumatismes non digérés",
           "Perte de sens, épuisement",
-          "Troubles du sommeil, insomnie"
+          "Troubles du sommeil, insomnie",
+          "..."
         ]
       }
     },
@@ -118,12 +120,13 @@
     "cta": {
       "title": "Votre bien être mérite une place.",
       "subtitle": "Prenez soin de votre énergie.",
-      "questions": "Si vous traversez une période difficile ou douloureuse, si vous avez du mal à gérer vos émotions, ou si vous ressentez le besoin de faire une pause, de vous recentrer et de retrouver votre équilibre physique, émotionnel et mental…",
+      "questions": "Si vous traversez une période difficile ou douloureuse,\nsi vous avez du mal à gérer vos émotions,\nou si vous ressentez le besoin de faire une pause, de vous recentrer et de retrouver votre équilibre physique, émotionnel et mental…",
       "accompaniment": "Je vous accompagne avec douceur et bienveillance sur ce chemin vers un mieux-être durable."
     }
   },
   "practices": {
     "title": "Mes pratiques",
+    "pageIntro": "Magnétisme, couper le feu et soins à distance — découvrez comment je peux vous accompagner.",
     "magnetism": {
       "title": "Magnétisme et soins énergétiques",
       "subtitle": "Les soins énergétiques étant parfois perçus comme une pratique mystique, j’aime utiliser une métaphore qui me parle particulièrement: ",

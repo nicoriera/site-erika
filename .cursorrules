@@ -39,13 +39,59 @@ Site vitrine pour Erika Diaz de Cerio - Magnétiseuse et praticienne en soins é
 - Utiliser des polices élégantes (serif + sans-serif)
 - Font serif pour les titres : `font-serif`
 - Font sans-serif pour le corps : par défaut
+- Titres de page : `text-4xl md:text-5xl`, `tracking-tight` pour un rendu net
+- Titres de section (h2) : `text-3xl md:text-4xl`, `leading-tight`
+- Sous-titres (h3) : `text-2xl md:text-3xl`, avec optionnellement un trait décoratif à gauche (`w-8 h-0.5 bg-sage rounded-full`)
+- Corps de texte : `text-lg`, `leading-relaxed`, `text-coffee/80` ou `text-coffee/85` pour la lisibilité
 
-### Mise en page
+### En-tête de page (hero de contenu)
 
-- Sections en quinconce (alternance gauche/droite)
-- Design doux, bien-être
-- Espacement généreux
-- Centrage pour certaines sections selon le brief
+- Pour les pages à contenu long : bloc d’en-tête dédié avec fond léger (`bg-sand-light/40` ou équivalent) et bordure basse (`border-b border-sage-light/60`)
+- Titre principal centré + courte intro (une phrase) centrée, `max-w-2xl mx-auto`
+- Navigation rapide (ancres) en pills : `rounded-full`, bordure légère (`border border-sage/20`), fond blanc ou `bg-white`, `shadow-sm`, hover avec `hover:bg-sage-light/40`
+- Toujours prévoir une clé i18n dédiée pour l’intro de page (ex. `practices.pageIntro`) plutôt que réutiliser un sous-titre de section
+
+### Mise en page des sections
+
+- Sections en quinconce : alternance image gauche/droite entre les blocs (order-1/order-2 avec `md:order-*`)
+- Séparer les sections par une bordure basse : `border-b border-sand/40` ou `border-sage-light/50`
+- Alternance de fonds : une section sur deux peut avoir un fond léger (`bg-sage-light/20`) pour créer du rythme
+- Espacement vertical des sections : `py-16 md:py-20`
+- Grilles texte/image : `gap-10 md:gap-14`, `items-start`
+- Conteneur principal : `max-w-5xl mx-auto px-4` ; pour le texte centré (blocs de contenu) : `max-w-3xl mx-auto`
+
+### Ancres et navigation interne
+
+- Utiliser `scroll-mt-24` (ou valeur adaptée au header fixe) sur chaque section ciblée par une ancre pour que le titre reste visible après clic
+- Liens d’ancrage : `min-h-[44px]` pour la zone tactile, `focus:ring-2 focus:ring-sage focus:ring-offset-2` pour l’accessibilité
+
+### Citations et notes
+
+- Citation / métaphore : `<blockquote>` avec `border-l-4 border-sage pl-5 py-1`, `italic`, `text-coffee/80`
+- Note importante ou complémentaire : `<aside>` avec `border-l-4 border-sage`, fond léger (`bg-sage-light/40`), `rounded-2xl p-6 md:p-8`
+
+### Listes et cartes
+
+- Listes à puces : préférer de petits cercles (`w-1.5 h-1.5 rounded-full bg-sage-dark` ou `bg-terracotta`) à la place du caractère « • », avec `flex items-start gap-3` et `leading-relaxed`
+- Bloc liste (ex. bienfaits) : fond `bg-sand-light/60`, bordure `border border-sand/50`, `rounded-2xl p-8 md:p-10`, titre en `font-serif text-xl`
+
+### Images
+
+- Conteneur d’image : `rounded-2xl overflow-hidden`, ombre douce `shadow-lg shadow-coffee/10`, fin contour `ring-1 ring-black/5`
+- Ratio cohérent pour les photos : `aspect-[2/3]` ou `aspect-[4/5]` selon le brief
+- Toujours un `alt` descriptif (clé i18n)
+
+### Carousels et contrôles
+
+- Conteneur du carousel : même traitement que les images (ombre + ring)
+- Boutons prev/next : `rounded-full`, `bg-white/90`, `shadow-md`, hover `hover:bg-white`, `focus:ring-2 focus:ring-sage focus:ring-offset-2`
+- Indicateurs (dots) : `w-3 h-3 rounded-full`, état actif `bg-sage-dark`, état inactif `bg-white/80`
+
+### Principes généraux
+
+- Design doux, bien-être ; rester cohérent avec la palette (sage, sand, coffee, terracotta)
+- Espacement généreux ; éviter les blocs de texte trop denses
+- Centrage pour les en-têtes de page et les blocs intro ; grille pour le contenu mixte texte/image
 
 ## Fonctionnalités
 
@@ -497,7 +543,7 @@ public/
 
 - Consulter BRIEF.md pour le contenu détaillé de chaque section
 - Respecter le ton bienveillant et doux dans les textes
-- Mise en page en quinconce pour alterner visuellement
+- Mise en page : voir la section **Design et style** (en-tête de page, sections, ancres, citations, listes, images, carousels) — référence : page Mes pratiques
 - Photos à ajouter progressivement (commencer sans si nécessaire)
 - Priorité : simplicité et efficacité avant tout
 - Principe : code simple, maintenable et évolutif

@@ -11,7 +11,7 @@ const localePath = useLocalePath();
         <div class="order-2 md:order-1">
           <div class="rounded-2xl aspect-[4/5] overflow-hidden">
             <img
-              src="/images/hero-beach-sunset.png"
+              src="/images/photo-erika.png"
               :alt="t('home.aboutTeaser.imageAlt')"
               class="w-full h-full object-cover" />
           </div>

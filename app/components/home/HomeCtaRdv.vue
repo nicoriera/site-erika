@@ -14,7 +14,7 @@ const { t } = useI18n();
           {{ t("home.cta.subtitle") }}
         </p>
 
-        <p class="text-lg text-coffee/80 mb-8 leading-relaxed max-w-xl mx-auto">
+        <p class="text-lg text-coffee/80 mb-8 leading-relaxed max-w-xl mx-auto whitespace-pre-line">
           {{ t("home.cta.questions") }}
         </p>
 

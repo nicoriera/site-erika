@@ -13,14 +13,14 @@
   },
   "footer": {
     "title": "Erika Diaz de Cerio – Magnetizadora",
-    "address": "13 rue du Siège",
+    "address": "14 boulevard du Général de Gaulle",
     "city": "64700 Hendaya",
     "phone": "Tel :",
     "email": "Email :",
     "consultations": "Consultas",
     "consultationsSchedule": "De lunes a sábado con cita previa.",
     "parking": "Estacionamiento gratuito en la calle.",
-    "bus": "Parada Joncaux (autobús n°14) a 50m.",
+    "bus": "Parada Ville (autobús n°4 o 15).",
     "payments": "Pagos",
     "paymentsMethods": "Efectivo, cheque, Wero.",
     "paymentsRemote": "A distancia : Wero o transferencia.",
@@ -111,7 +111,7 @@
     "subtitle": "No dude en contactarme para cualquier pregunta o para reservar una cita",
     "info": {
       "title": "Información de contacto",
-      "address": "13 rue du Siège",
+      "address": "14 boulevard du Général de Gaulle",
       "city": "64700 Hendaya",
       "phone": "Teléfono",
       "email": "Email",
@@ -124,6 +124,7 @@
   },
   "practices": {
     "title": "Mis prácticas",
+    "pageIntro": "Magnetismo, cortar el fuego y cuidados a distancia — descubre cómo puedo acompañarte.",
     "magnetism": {
       "title": "Magnetismo y cuidados energéticos",
       "subtitle": "Los cuidados energéticos siendo a veces percibidos como una práctica mística, me gusta usar una metáfora que me habla particularmente: ",
