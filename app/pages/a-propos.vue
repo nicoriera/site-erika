@@ -71,7 +71,9 @@ useSiteMeta(t("pages.about"), t("meta.description"));
               <p class="text-lg text-coffee/80 leading-relaxed">
                 {{ t("about.already") }}
               </p>
-              <p class="text-lg text-coffee/80 leading-relaxed">
+              <p
+                v-if="t('about.heart')"
+                class="text-lg text-coffee/80 leading-relaxed">
                 {{ t("about.heart") }}
               </p>
             </div>

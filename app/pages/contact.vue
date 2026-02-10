@@ -85,7 +85,7 @@ const mapSrc =
                 {{ t("contact.info.email") }}
               </p>
               <a
-                href="mailto:erika.magnetiseuse@gmail.com"
+                href="mailto:soins.erikaddc@gmail.com"
                 class="underline hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded">
                 soins.erikaddc@gmail.com
               </a>
