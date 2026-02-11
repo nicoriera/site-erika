@@ -50,6 +50,8 @@
   "home": {
     "hero": {
       "name": "Erika Diaz de Cerio",
+      "nameFirst": "Erika",
+      "nameLast": "Diaz de Cerio",
       "title": "Magnetismo y terapias energéticas",
       "location": "Hendaya",
       "imageAlt": "Paisaje costero de Hendaya al atardecer con playa, formaciones rocosas y cielo nublado"

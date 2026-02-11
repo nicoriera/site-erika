@@ -66,6 +66,8 @@
   "home": {
     "hero": {
       "name": "Erika Diaz de Cerio",
+      "nameFirst": "Erika",
+      "nameLast": "Diaz de Cerio",
       "title": "Magnétisme et soins énergétiques",
       "location": "Hendaye",
       "imageAlt": "Paysage côtier d'Hendaye au coucher de soleil avec plage, formations rocheuses et ciel nuageux"
