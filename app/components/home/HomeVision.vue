@@ -4,7 +4,7 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <section class="py-16 mb-16 relative">
+  <section class="py-8 md:py-10 mb-8 md:mb-10 relative">
     <!-- Image de fond décorative -->
     <div class="absolute inset-0 opacity-5 pointer-events-none">
       <img
@@ -29,7 +29,7 @@ const localePath = useLocalePath();
       </p>
 
       <div
-        class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 mb-8">
+        class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 mb-8 max-w-2xl mx-auto">
         <img
           src="/images/photo-erika-hands.png"
           alt="Magnétisme et soins énergétiques"

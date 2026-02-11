@@ -40,7 +40,7 @@ const mapSrc =
   <div class="min-h-screen">
     <!-- En-tête de page -->
     <header class="bg-sand-light/40 border-b border-sage-light/60">
-      <div class="max-w-5xl mx-auto px-4 py-12 md:py-16">
+      <div class="max-w-5xl mx-auto px-4 py-8 md:py-10">
         <h1
           class="font-serif text-4xl md:text-5xl text-coffee mb-4 text-center tracking-tight">
           {{ t("contact.title") }}
@@ -51,7 +51,7 @@ const mapSrc =
       </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-16 md:py-20">
+    <main class="max-w-5xl mx-auto px-4 py-8 md:py-8 lg:py-10">
       <div class="grid md:grid-cols-2 gap-10 md:gap-14">
         <!-- Informations de contact -->
         <div

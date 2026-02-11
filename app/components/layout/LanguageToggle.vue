@@ -10,6 +10,25 @@ const { locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 const localePath = useLocalePath();
 
+const getLocaleCode = (localeItem: string | LocaleItem): string => {
+  if (typeof localeItem === "string") return localeItem;
+  return localeItem.code || "";
+};
+
+// Ordre explicite FR | ES (évite l'inversion sur mobile)
+const sortedLocales = computed(() => {
+  const items = Array.isArray(locales.value)
+    ? locales.value
+    : (Object.values(locales.value as Record<string, string | LocaleItem>) as (string | LocaleItem)[]);
+  return [...items].sort((a, b) => {
+    const codeA = getLocaleCode(a);
+    const codeB = getLocaleCode(b);
+    if (codeA === "fr") return -1;
+    if (codeB === "fr") return 1;
+    return codeA.localeCompare(codeB);
+  });
+});
+
 const switchLanguage = (targetLocale: string) => {
   const targetLocaleCode = targetLocale as "fr" | "es";
 
@@ -33,11 +52,6 @@ const isActive = (localeCode: string): boolean => {
   return locale.value === localeCode;
 };
 
-const getLocaleCode = (localeItem: string | LocaleItem): string => {
-  if (typeof localeItem === "string") return localeItem;
-  return localeItem.code || "";
-};
-
 const getLocaleLabel = (localeItem: string | LocaleItem): string => {
   const code = getLocaleCode(localeItem);
   return code.toUpperCase();
@@ -55,7 +69,7 @@ const getLocaleName = (localeItem: string | LocaleItem): string => {
     role="group"
     aria-label="Sélecteur de langue">
     <button
-      v-for="localeItem in locales"
+      v-for="localeItem in sortedLocales"
       :key="getLocaleCode(localeItem)"
       @click="switchLanguage(getLocaleCode(localeItem))"
       :disabled="isActive(getLocaleCode(localeItem))"

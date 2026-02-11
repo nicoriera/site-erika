@@ -14,14 +14,18 @@ const { t } = useI18n();
 const localePath = useLocalePath();
 const route = useRoute();
 
-const navItems = [
+// Référence pour le piège de focus
+const menuRef = ref<HTMLElement | null>(null);
+const closeButtonRef = ref<HTMLButtonElement | null>(null);
+
+const navItems = computed(() => [
   { label: t("nav.home"), path: "/" },
   { label: t("nav.practices"), path: "/mes-pratiques" },
   { label: t("nav.about"), path: "/a-propos" },
   { label: t("nav.rates"), path: "/tarifs" },
   { label: t("nav.contact"), path: "/contact" },
   { label: t("nav.reviews"), path: "/avis" },
-];
+]);
 
 const isActive = (path: string): boolean => {
   return route.path === localePath(path);
@@ -31,7 +35,7 @@ const handleLinkClick = () => {
   emit("close");
 };
 
-// Fermer le menu avec la touche Escape
+// Fermer avec Escape
 onMounted(() => {
   const handleEscape = (e: KeyboardEvent) => {
     if (e.key === "Escape" && props.isOpen) {
@@ -44,16 +48,19 @@ onMounted(() => {
   });
 });
 
-// Empêcher le scroll du body quand le menu est ouvert
+// Piège de focus : garder le focus dans le menu à l'ouverture
 watch(
   () => props.isOpen,
   (open) => {
     if (open) {
       document.body.style.overflow = "hidden";
+      nextTick(() => {
+        closeButtonRef.value?.focus();
+      });
     } else {
       document.body.style.overflow = "";
     }
-  }
+  },
 );
 </script>
 
@@ -63,71 +70,86 @@ watch(
     <Transition name="fade">
       <div
         v-if="isOpen"
-        class="fixed inset-0 bg-coffee/50 backdrop-blur-sm z-40 md:hidden"
+        class="fixed inset-0 bg-coffee/40 backdrop-blur-sm z-[100] md:hidden"
         @click="emit('close')"
-        aria-hidden="true"
-      />
+        aria-hidden="true" />
     </Transition>
 
-    <!-- Menu mobile -->
+    <!-- Menu mobile - panneau coulissant -->
     <Transition name="slide">
       <nav
         v-if="isOpen"
-        class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-sand-light z-50 shadow-2xl md:hidden overflow-y-auto"
+        ref="menuRef"
+        id="mobile-menu"
+        class="fixed top-0 right-0 bottom-0 w-[min(320px,85vw)] bg-sand-light z-[110] md:hidden overflow-y-auto flex flex-col shadow-2xl ring-1 ring-coffee/10"
         role="navigation"
-        aria-label="Menu de navigation principal">
-        <div class="flex flex-col h-full">
-          <!-- Header du menu -->
-          <div class="flex items-center justify-between p-4 border-b border-sand">
-            <span class="font-serif text-lg text-coffee">
-              {{ t("nav.home") }}
-            </span>
-            <button
-              @click="emit('close')"
-              class="p-2 rounded-full hover:bg-sand transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2"
-              aria-label="Fermer le menu">
-              <svg
-                class="w-6 h-6 text-coffee"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+        :aria-label="t('header.menuTitle')">
+        <!-- En-tête du menu : titre + bouton fermer -->
+        <div
+          class="flex items-center justify-between shrink-0 px-5 py-4 border-b border-sage-light/60 bg-white/50">
+          <span class="font-serif text-xl text-coffee tracking-tight">
+            {{ t("header.menuTitle") }}
+          </span>
+          <button
+            ref="closeButtonRef"
+            type="button"
+            @click="emit('close')"
+            class="min-h-[44px] min-w-[44px] p-2 rounded-full hover:bg-sage-light/50 transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 flex items-center justify-center"
+            :aria-label="t('header.closeMenu')">
+            <svg
+              class="w-6 h-6 text-coffee"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
 
-          <!-- Navigation -->
-          <ul class="flex flex-col py-4">
-            <li v-for="item in navItems" :key="item.path">
-              <NuxtLink
-                :to="localePath(item.path)"
-                :class="[
-                  'block px-6 py-4 text-coffee transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-inset',
-                  isActive(item.path)
-                    ? 'bg-sage-light/50 text-sage-dark font-medium border-l-4 border-sage-dark'
-                    : 'hover:bg-sage-light/30',
-                ]"
-                :aria-current="isActive(item.path) ? 'page' : undefined"
-                @click="handleLinkClick">
-                {{ item.label }}
-              </NuxtLink>
-            </li>
-          </ul>
+        <!-- Navigation - zone tactile 44px minimum -->
+        <ul class="flex flex-col py-2 px-3 flex-1 overflow-y-auto">
+          <li v-for="item in navItems" :key="item.path">
+            <NuxtLink
+              :to="localePath(item.path)"
+              :class="[
+                'flex items-center min-h-[48px] px-5 py-3 rounded-xl text-base font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-inset focus:ring-offset-0',
+                isActive(item.path)
+                  ? 'bg-sage-light/60 text-sage-dark border-l-4 border-sage-dark -ml-0.5 pl-5'
+                  : 'text-coffee hover:bg-sage-light/40 active:bg-sage-light/50',
+              ]"
+              :aria-current="isActive(item.path) ? 'page' : undefined"
+              @click="handleLinkClick">
+              {{ item.label }}
+            </NuxtLink>
+          </li>
+        </ul>
 
-          <!-- Bouton RDV -->
-          <div class="px-6 py-4 border-t border-sand mt-auto">
-            <a
-              href="https://www.resalib.fr"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block w-full text-center rounded-full bg-sage px-6 py-3 text-white text-base font-medium shadow-sm hover:bg-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2">
-              {{ t("header.bookAppointment") }}
-            </a>
+        <!-- Sélecteur de langue -->
+        <div
+          class="shrink-0 px-5 py-4 border-t border-sage-light/60 bg-sand-light/30">
+          <p class="text-sm font-medium text-coffee/80 mb-3">
+            {{ t("header.language") }}
+          </p>
+          <div class="flex justify-center">
+            <LayoutLanguageToggle />
           </div>
+        </div>
+
+        <!-- CTA RDV - bien visible (padding safe-area pour iPhone) -->
+        <div
+          class="shrink-0 p-5 pt-0 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+          <a
+            href="https://www.resalib.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center min-h-[48px] w-full rounded-full bg-sage px-6 py-3 text-white text-base font-semibold shadow-md hover:bg-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 focus:ring-offset-sand-light">
+            {{ t("header.bookAppointment") }}
+          </a>
         </div>
       </nav>
     </Transition>
@@ -137,7 +159,7 @@ watch(
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s ease;
 }
 
 .fade-enter-from,
@@ -146,11 +168,11 @@ watch(
 }
 
 .slide-enter-active {
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 .slide-leave-active {
-  transition: transform 0.3s ease-in;
+  transition: transform 0.25s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 .slide-enter-from {
@@ -161,4 +183,3 @@ watch(
   transform: translateX(100%);
 }
 </style>
-

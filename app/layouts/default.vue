@@ -18,12 +18,22 @@ const closeMobileMenu = () => {
   isMobileMenuOpen.value = false;
 };
 
-// Fermer le menu quand on change de route
+// Normalise le chemin pour ignorer le préfixe de locale (ex: /es/mes-pratiques → /mes-pratiques)
+const getNormalizedPath = (path: string): string => {
+  if (path === "/es" || path === "/") return "/";
+  if (path.startsWith("/es/")) return path.slice(3);
+  return path;
+};
+
+// Fermer le menu uniquement quand on navigue vers une autre page (pas lors du changement de langue)
 watch(
   () => route.path,
-  () => {
-    isMobileMenuOpen.value = false;
-  }
+  (newPath, oldPath) => {
+    if (!oldPath) return;
+    if (getNormalizedPath(newPath) !== getNormalizedPath(oldPath)) {
+      isMobileMenuOpen.value = false;
+    }
+  },
 );
 
 // Vérifier si une route est active
@@ -53,9 +63,9 @@ const isActiveRoute = (path: string): boolean => {
           <img
             src="/images/logo-erika.png"
             alt="Erika Diaz de Cerio - Magnétisme et soins énergétiques"
-            class="h-14 md:h-16 w-auto"
-            width="180"
-            height="56" />
+            class="h-16 md:h-20 w-auto max-w-[200px] md:max-w-[240px] object-contain object-left"
+            width="240"
+            height="80" />
         </NuxtLink>
 
         <div class="flex items-center gap-4 md:gap-6">
@@ -152,12 +162,14 @@ const isActiveRoute = (path: string): boolean => {
             </li>
           </ul>
 
-          <!-- Bouton hamburger mobile -->
+          <!-- Bouton hamburger mobile - zone tactile 44px -->
           <button
             @click="toggleMobileMenu"
-            class="md:hidden p-2 rounded-full hover:bg-sand transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2"
+            class="md:hidden min-h-[44px] min-w-[44px] p-2 rounded-full hover:bg-sage-light/50 transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 flex items-center justify-center"
             :aria-expanded="isMobileMenuOpen"
-            aria-label="Ouvrir le menu de navigation"
+            :aria-label="
+              isMobileMenuOpen ? t('header.closeMenu') : t('header.openMenu')
+            "
             aria-controls="mobile-menu">
             <svg
               v-if="!isMobileMenuOpen"
@@ -185,7 +197,10 @@ const isActiveRoute = (path: string): boolean => {
             </svg>
           </button>
 
-          <LanguageToggle />
+          <!-- Sélecteur de langue - masqué sur mobile (présent dans le menu) -->
+          <div class="hidden md:flex">
+            <LanguageToggle />
+          </div>
         </div>
 
         <!-- Menu mobile -->

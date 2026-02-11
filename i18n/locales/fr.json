@@ -9,7 +9,11 @@
   },
   "header": {
     "subtitle": "Magnétisme et soins énergétiques",
-    "bookAppointment": "Prendre RDV"
+    "bookAppointment": "Prendre RDV",
+    "menuTitle": "Menu",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue"
   },
   "footer": {
     "title": "Erika Diaz de Cerio – Magnétiseuse",
