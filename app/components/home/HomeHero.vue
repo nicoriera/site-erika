@@ -4,7 +4,7 @@ const { t } = useI18n();
 
 <template>
   <section
-    class="relative min-h-[45vh] flex items-center justify-center rounded-2xl mb-16 overflow-hidden">
+    class="relative min-h-[45vh] flex items-center justify-center rounded-2xl mb-8 md:mb-10 overflow-hidden">
     <!-- Image de fond -->
     <div class="absolute inset-0 z-0">
       <img

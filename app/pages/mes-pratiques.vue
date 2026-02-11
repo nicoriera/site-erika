@@ -59,12 +59,12 @@ const benefitsList = computed((): string[] => {
   <div class="min-h-screen">
     <!-- En-tête de page : titre + navigation rapide -->
     <header class="bg-sand-light/40 border-b border-sage-light/60">
-      <div class="max-w-5xl mx-auto px-4 py-12 md:py-16">
+      <div class="max-w-5xl mx-auto px-4 py-8 md:py-10">
         <h1
           class="font-serif text-4xl md:text-5xl text-coffee mb-4 text-center tracking-tight">
           {{ t("practices.title") }}
         </h1>
-        <p class="text-center text-coffee/70 text-lg max-w-2xl mx-auto mb-10">
+        <p class="text-center text-coffee/70 text-lg max-w-2xl mx-auto mb-6 md:mb-10">
           {{ t("practices.pageIntro") }}
         </p>
         <nav
@@ -93,9 +93,9 @@ const benefitsList = computed((): string[] => {
       <!-- Section Magnétisme -->
       <section
         id="magnetisme"
-        class="scroll-mt-24 py-16 md:py-20 border-b border-sand/40">
-        <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-start mb-14">
-          <div class="order-2 md:order-1">
+        class="scroll-mt-24 py-10 md:py-12 lg:py-14 border-b border-sand/40">
+        <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start mb-10 md:mb-14">
+          <div class="order-2 md:order-1 max-w-[240px] md:max-w-[280px] mx-auto md:mx-0">
             <div
               class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5">
               <img
@@ -172,8 +172,8 @@ const benefitsList = computed((): string[] => {
                 aria-hidden="true" />
               {{ t("practices.magnetism.session.title") }}
             </h3>
-            <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-              <div class="order-2 md:order-1">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
+              <div class="order-2 md:order-1 max-w-[240px] md:max-w-[280px] mx-auto md:mx-0">
                 <div
                   class="relative rounded-2xl overflow-hidden bg-sand-light/50 shadow-lg shadow-coffee/10 ring-1 ring-black/5">
                   <div class="aspect-[2/3] relative">
@@ -268,16 +268,16 @@ const benefitsList = computed((): string[] => {
           </div>
 
           <!-- L'après séance -->
-          <div class="pt-12">
+          <div class="pt-8 md:pt-10">
             <h3
-              class="font-serif text-2xl md:text-3xl text-coffee mb-8 flex items-center gap-3">
+              class="font-serif text-2xl md:text-3xl text-coffee mb-6 md:mb-8 flex items-center gap-3">
               <span
                 class="w-8 h-0.5 bg-sage rounded-full"
                 aria-hidden="true" />
               {{ t("practices.magnetism.after.title") }}
             </h3>
-            <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-              <div class="order-1 md:order-2">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
+              <div class="order-2 md:order-2 max-w-[240px] md:max-w-[280px] mx-auto md:mx-0">
                 <div
                   class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5">
                   <img
@@ -287,7 +287,7 @@ const benefitsList = computed((): string[] => {
                 </div>
               </div>
               <div
-                class="order-2 md:order-1 space-y-5 text-coffee/85 text-lg leading-relaxed">
+                class="order-1 md:order-1 space-y-5 text-coffee/85 text-lg leading-relaxed">
                 <p>{{ t("practices.magnetism.after.water") }}</p>
                 <p>{{ t("practices.magnetism.after.benefits") }}</p>
                 <p>{{ t("practices.magnetism.after.feelings") }}</p>
@@ -305,9 +305,9 @@ const benefitsList = computed((): string[] => {
       <!-- Section Couper le feu -->
       <section
         id="couper-le-feu"
-        class="scroll-mt-24 py-16 md:py-20 bg-sage-light/20 border-b border-sage-light/50">
-        <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-          <div class="order-1 md:order-2">
+        class="scroll-mt-24 py-10 md:py-12 lg:py-14 bg-sage-light/20 border-b border-sage-light/50">
+        <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
+          <div class="order-2 md:order-2 max-w-[240px] md:max-w-[280px] mx-auto md:mx-0">
             <div
               class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5">
               <img
@@ -316,7 +316,7 @@ const benefitsList = computed((): string[] => {
                 class="w-full aspect-[2/3] object-cover" />
             </div>
           </div>
-          <div class="order-2 md:order-1">
+          <div class="order-1 md:order-1">
             <h2
               class="font-serif text-3xl md:text-4xl text-coffee mb-6 leading-tight">
               {{ t("practices.cutFire.title") }}
@@ -345,9 +345,9 @@ const benefitsList = computed((): string[] => {
       <!-- Section Soins à distance -->
       <section
         id="soins-distance"
-        class="scroll-mt-24 py-16 md:py-20 border-b border-sand/40">
-        <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-          <div class="order-2 md:order-1">
+        class="scroll-mt-24 py-10 md:py-12 lg:py-14 border-b border-sand/40">
+        <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
+          <div class="order-2 md:order-1 max-w-[240px] md:max-w-[280px] mx-auto md:mx-0">
             <div
               class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5">
               <img

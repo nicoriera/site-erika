@@ -36,10 +36,10 @@ const emotionalItems = computed((): string[] => {
 </script>
 
 <template>
-  <section class="py-16 md:py-20">
+  <section class="py-8 md:py-10 lg:py-12">
     <div class="max-w-5xl mx-auto px-4">
       <h2
-        class="font-serif text-3xl md:text-4xl text-coffee mb-12 text-center leading-tight">
+        class="font-serif text-3xl md:text-4xl text-coffee mb-8 md:mb-12 text-center leading-tight">
         {{ t("home.situations.title") }}
       </h2>
 

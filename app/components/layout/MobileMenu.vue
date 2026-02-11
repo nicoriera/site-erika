@@ -14,14 +14,15 @@ const { t } = useI18n();
 const localePath = useLocalePath();
 const route = useRoute();
 
-const navItems = [
+// computed pour que les labels se mettent à jour lors du changement de langue
+const navItems = computed(() => [
   { label: t("nav.home"), path: "/" },
   { label: t("nav.practices"), path: "/mes-pratiques" },
   { label: t("nav.about"), path: "/a-propos" },
   { label: t("nav.rates"), path: "/tarifs" },
   { label: t("nav.contact"), path: "/contact" },
   { label: t("nav.reviews"), path: "/avis" },
-];
+]);
 
 const isActive = (path: string): boolean => {
   return route.path === localePath(path);

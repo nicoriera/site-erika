@@ -12,7 +12,7 @@ useSiteMeta(t("pages.about"), t("meta.description"));
   <div class="min-h-screen">
     <!-- En-tête de page -->
     <header class="bg-sand-light/40 border-b border-sage-light/60">
-      <div class="max-w-5xl mx-auto px-4 py-12 md:py-16">
+      <div class="max-w-5xl mx-auto px-4 py-8 md:py-10">
         <h1
           class="font-serif text-4xl md:text-5xl text-coffee mb-4 text-center tracking-tight">
           {{ t("about.title") }}
@@ -26,7 +26,7 @@ useSiteMeta(t("pages.about"), t("meta.description"));
     <main class="max-w-5xl mx-auto px-4">
       <div class="max-w-3xl mx-auto">
         <!-- Introduction -->
-        <section class="py-16 md:py-20 border-b border-sand/40 text-center">
+        <section class="py-10 md:py-10 lg:py-12 border-b border-sand/40 text-center">
           <p class="text-xl text-coffee/85 mb-4 font-medium">
             {{ t("about.greeting") }},
           </p>
@@ -37,7 +37,7 @@ useSiteMeta(t("pages.about"), t("meta.description"));
 
         <!-- Enfance -->
         <section
-          class="py-16 md:py-20 bg-sage-light/20 border-b border-sage-light/50">
+          class="py-10 md:py-10 lg:py-12 bg-sage-light/20 border-b border-sage-light/50">
           <p class="text-lg text-coffee/80 mb-4 leading-relaxed">
             {{ t("about.childhood") }}
           </p>
@@ -50,9 +50,9 @@ useSiteMeta(t("pages.about"), t("meta.description"));
         </section>
 
         <!-- Parcours professionnel -->
-        <section class="py-16 md:py-20 border-b border-sand/40">
-          <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-            <div class="order-2 md:order-1">
+        <section class="py-10 md:py-10 lg:py-12 border-b border-sand/40">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
+            <div class="order-2 md:order-1 max-w-[240px] md:max-w-[280px] mx-auto md:mx-0">
               <div
                 class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 aspect-[2/3]">
                 <img
@@ -82,7 +82,7 @@ useSiteMeta(t("pages.about"), t("meta.description"));
 
         <!-- Quand l'évidence se révèle -->
         <section
-          class="py-16 md:py-20 bg-sand-light/50 border-b border-sand/40">
+          class="py-10 md:py-10 lg:py-12 bg-sand-light/50 border-b border-sand/40">
           <h2
             class="font-serif text-3xl md:text-4xl text-coffee mb-8 text-center leading-tight">
             {{ t("about.revelation.title") }}
@@ -105,9 +105,9 @@ useSiteMeta(t("pages.about"), t("meta.description"));
         </section>
 
         <!-- Photo cabinet -->
-        <section class="py-16 md:py-20 border-b border-sand/40">
+        <section class="py-10 md:py-10 lg:py-12 border-b border-sand/40">
           <div
-            class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 aspect-[16/9] max-w-3xl mx-auto">
+            class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 aspect-[16/9] max-w-[280px] md:max-w-2xl mx-auto">
             <img
               src="/images/photo 14.JPG"
               :alt="t('about.cabinetImageAlt')"
@@ -116,7 +116,7 @@ useSiteMeta(t("pages.about"), t("meta.description"));
         </section>
 
         <!-- Note complémentaire -->
-        <section class="py-16 md:py-20">
+        <section class="py-10 md:py-10 lg:py-12">
           <aside
             class="bg-sage-light/40 rounded-2xl p-6 md:p-8 border-l-4 border-sage text-coffee/80">
             <p class="font-medium text-coffee mb-2">

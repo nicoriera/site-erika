@@ -75,9 +75,10 @@
           "Dolores de cabeza, migrañas, cefaleas",
           "Problemas de la piel",
           "Quemaduras",
-          "Estreñimiento",
+          "Problemas digestivos",
           "Efectos secundarios relacionados con tratamientos médicos (radioterapia, quimioterapia…)",
-          "Dolores menstruales"
+          "Dolores menstruales",
+          "..."
         ]
       },
       "emotional": {
@@ -87,7 +88,8 @@
           "Falta de autoestima",
           "Traumas no resueltos",
           "Pérdida de sentido, agotamiento",
-          "Trastornos del sueño, insomnio"
+          "Trastornos del sueño, insomnio",
+          "..."
         ]
       }
     },

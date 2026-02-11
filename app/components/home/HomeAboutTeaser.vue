@@ -4,11 +4,11 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <section class="py-16 md:py-20">
+  <section class="py-8 md:py-10 lg:py-12">
     <div class="max-w-5xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
         <!-- Image - à gauche -->
-        <div class="order-2 md:order-1">
+        <div class="order-2 md:order-1 max-w-[280px] md:max-w-[320px] mx-auto md:mx-0">
           <div
             class="rounded-2xl overflow-hidden shadow-lg shadow-coffee/10 ring-1 ring-black/5 aspect-[4/5]">
             <img

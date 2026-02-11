@@ -23,7 +23,7 @@ watch(
   () => route.path,
   () => {
     isMobileMenuOpen.value = false;
-  }
+  },
 );
 
 // Vérifier si une route est active
@@ -53,9 +53,9 @@ const isActiveRoute = (path: string): boolean => {
           <img
             src="/images/logo-erika.png"
             alt="Erika Diaz de Cerio - Magnétisme et soins énergétiques"
-            class="h-14 md:h-16 w-auto"
-            width="180"
-            height="56" />
+            class="h-16 md:h-20 w-auto max-w-[200px] md:max-w-[240px] object-contain object-left"
+            width="240"
+            height="80" />
         </NuxtLink>
 
         <div class="flex items-center gap-4 md:gap-6">
