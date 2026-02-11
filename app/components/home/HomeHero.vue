@@ -18,7 +18,7 @@ const { t } = useI18n();
     <div class="text-center px-4 py-16 z-10 relative">
       <h1
         class="font-serif text-5xl md:text-6xl text-white mb-4 drop-shadow-lg">
-        {{ t("home.hero.name") }}
+        {{ t("home.hero.nameFirst") }}<br class="md:hidden" />{{ t("home.hero.nameLast") }}
       </h1>
       <p class="text-xl md:text-2xl text-white/95 mb-2 drop-shadow-md">
         {{ t("home.hero.title") }}
