@@ -9,7 +9,11 @@
   },
   "header": {
     "subtitle": "Magnetismo y terapias energéticas",
-    "bookAppointment": "Reservar cita"
+    "bookAppointment": "Reservar cita",
+    "menuTitle": "Menú",
+    "openMenu": "Abrir el menú de navegación",
+    "closeMenu": "Cerrar el menú",
+    "language": "Idioma"
   },
   "footer": {
     "title": "Erika Diaz de Cerio – Magnetizadora",
