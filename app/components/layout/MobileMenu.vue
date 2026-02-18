@@ -144,7 +144,7 @@ watch(
         <div
           class="shrink-0 p-5 pt-0 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
           <a
-            href="https://www.resalib.fr"
+            href="https://www.resalib.fr/praticien/124708-erika-diaz-de-cerio-magnetiseur-hendaye#newrdvmodal"
             target="_blank"
             rel="noopener noreferrer"
             class="flex items-center justify-center min-h-[48px] w-full rounded-full bg-sage px-6 py-3 text-white text-base font-semibold shadow-md hover:bg-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 focus:ring-offset-sand-light">

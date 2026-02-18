@@ -153,7 +153,7 @@ const isActiveRoute = (path: string): boolean => {
             </li>
             <li>
               <a
-                href="https://www.resalib.fr"
+                href="https://www.resalib.fr/praticien/124708-erika-diaz-de-cerio-magnetiseur-hendaye#newrdvmodal"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center rounded-full bg-sage px-4 py-2 text-white text-sm font-medium shadow-sm hover:bg-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2">

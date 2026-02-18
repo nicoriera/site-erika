@@ -16,7 +16,7 @@ export const useSiteMeta = (
 
   // URL complète de la page
   const baseUrl =
-    (config.public.siteUrl as string) || "https://erika-diaz-de-cerio.fr";
+    (config.public.siteUrl as string) || "https://erikamagnetiseusehendaye.fr";
   const currentLocale = locale.value || "fr";
   const path = route.path;
   const canonicalUrl = `${baseUrl}${path}`;

@@ -38,7 +38,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
               {{ t("rates.services.adult.price") }}
             </p>
             <a
-              href="https://www.resalib.fr"
+              href="https://www.resalib.fr/praticien/124708-erika-diaz-de-cerio-magnetiseur-hendaye#newrdvmodal"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center w-full px-4 py-3 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
@@ -57,7 +57,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
               {{ t("rates.services.child.price") }}
             </p>
             <a
-              href="https://www.resalib.fr"
+              href="https://www.resalib.fr/praticien/124708-erika-diaz-de-cerio-magnetiseur-hendaye#newrdvmodal"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center w-full px-4 py-3 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
@@ -117,7 +117,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
                 </td>
                 <td class="px-6 py-4 text-center">
                   <a
-                    href="https://www.resalib.fr"
+                    href="https://www.resalib.fr/praticien/124708-erika-diaz-de-cerio-magnetiseur-hendaye#newrdvmodal"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center px-4 py-2 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
@@ -137,7 +137,7 @@ useSiteMeta(t("pages.rates"), t("meta.description"));
                 </td>
                 <td class="px-6 py-4 text-center">
                   <a
-                    href="https://www.resalib.fr"
+                    href="https://www.resalib.fr/praticien/124708-erika-diaz-de-cerio-magnetiseur-hendaye#newrdvmodal"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center px-4 py-2 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-base focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
