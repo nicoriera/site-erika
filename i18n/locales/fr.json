@@ -260,6 +260,43 @@
     "title": "Déposer un avis",
     "subtitle": "Votre avis m'aide à améliorer mes services",
     "description": "Si vous avez bénéficié de mes soins, n'hésitez pas à partager votre expérience sur Google Avis.",
-    "button": "Déposer un avis sur Google"
+    "button": "Déposer un avis sur Google",
+    "fromGoogle": "Avis Google",
+    "empty": "Aucun avis à afficher pour le moment.",
+    "ratingLabel": "Note moyenne",
+    "ratingCount": "{count} avis",
+    "ratingCountOne": "1 avis",
+    "list": [
+      {
+        "author": "Nicolas R.",
+        "rating": 5,
+        "text": "Nous avons consulté Erika pour le sommeil de notre fille de 4 ans, et cela a vraiment aidé. Elle nous a mis à l'aise dès le début, c'est une personne douce et de confiance. Très belle expérience.",
+        "date": "Il y a 5 jours"
+      },
+      {
+        "author": "Isa L.",
+        "rating": 5,
+        "text": "Je suis venue voir Erika il y a 3 mois et je ne regrette absolument pas. Elle est adorable, à l'écoute, très professionnelle. Suite à notre rendez-vous, je me suis sentie apaisée.",
+        "date": "Il y a un jour"
+      },
+      {
+        "author": "Charlène",
+        "rating": 5,
+        "text": "Je vous recommande Erika les yeux fermés ! J'ai fait appel à elle pour un état général de stress et de fatigue, notamment lié à mon travail.",
+        "date": "Il y a 6 jours"
+      },
+      {
+        "author": "Margaux B.",
+        "rating": 5,
+        "text": "Je vous recommande Erika à 200 % ! Elle a fait de mon accouchement un moment inoubliable. J'ai été hospitalisée car fissure de la poche des eaux, je me sentais très angoissée — elle m'a vraiment accompagnée.",
+        "date": "Il y a une semaine"
+      },
+      {
+        "author": "Johanna J.",
+        "rating": 5,
+        "text": "Nous avons consulté Erika pour aider mon père à gérer les effets secondaires de la chimiothérapie. Le premier rendez-vous a eu lieu à son cabinet, et les suivants à distance.",
+        "date": "Il y a un jour"
+      }
+    ]
   }
 }

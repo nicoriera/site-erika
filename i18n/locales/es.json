@@ -259,6 +259,43 @@
     "title": "Dejar una opinión",
     "subtitle": "Su opinión me ayuda a mejorar mis servicios",
     "description": "Si se ha beneficiado de mis cuidados, no dude en compartir su experiencia en Google Opiniones.",
-    "button": "Dejar una opinión en Google"
+    "button": "Dejar una opinión en Google",
+    "fromGoogle": "Opiniones de Google",
+    "empty": "Ninguna opinión por el momento.",
+    "ratingLabel": "Valoración media",
+    "ratingCount": "{count} opiniones",
+    "ratingCountOne": "1 opinión",
+    "list": [
+      {
+        "author": "Nicolas R.",
+        "rating": 5,
+        "text": "Consultamos a Erika por el sueño de nuestra hija de 4 años y realmente ayudó. Nos hizo sentir cómodos desde el primer momento; es una persona dulce y de confianza. Una experiencia muy bonita.",
+        "date": "Hace 5 días"
+      },
+      {
+        "author": "Isa L.",
+        "rating": 5,
+        "text": "Fui a ver a Erika hace 3 meses y no me arrepiento en absoluto. Es adorable, atenta, muy profesional. Después de la cita me sentí más tranquila.",
+        "date": "Hace 1 día"
+      },
+      {
+        "author": "Charlène",
+        "rating": 5,
+        "text": "¡Les recomiendo a Erika con los ojos cerrados! Acudí a ella por un estado general de estrés y cansancio, sobre todo ligado al trabajo.",
+        "date": "Hace 6 días"
+      },
+      {
+        "author": "Margaux B.",
+        "rating": 5,
+        "text": "¡Recomiendo a Erika al 200 %! Hizo de mi parto un momento inolvidable. Estuve hospitalizada por fisura de la bolsa; estaba muy angustiada y me acompañó de verdad.",
+        "date": "Hace una semana"
+      },
+      {
+        "author": "Johanna J.",
+        "rating": 5,
+        "text": "Consultamos a Erika para ayudar a mi padre con los efectos secundarios de la quimioterapia. La primera cita fue en su consulta y las siguientes a distancia.",
+        "date": "Hace 1 día"
+      }
+    ]
   }
 }
