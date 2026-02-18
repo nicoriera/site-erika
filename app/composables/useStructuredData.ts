@@ -58,7 +58,7 @@ export const useStructuredData = () => {
 
   const config = useRuntimeConfig();
   const baseUrl =
-    (config.public.siteUrl as string) || "https://erika-diaz-de-cerio.fr";
+    (config.public.siteUrl as string) || "https://erikamagnetiseusehendaye.fr";
   const currentLocale = locale.value || "fr";
 
   // Schema LocalBusiness

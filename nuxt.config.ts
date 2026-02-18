@@ -57,7 +57,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl:
-        process.env.NUXT_PUBLIC_SITE_URL || "https://erika-diaz-de-cerio.fr",
+        process.env.NUXT_PUBLIC_SITE_URL || "https://erikamagnetiseusehendaye.fr",
     },
   },
   // Optimisation pour la génération statique

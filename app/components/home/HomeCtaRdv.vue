@@ -16,7 +16,8 @@ const { t } = useI18n();
           {{ t("home.cta.subtitle") }}
         </p>
 
-        <p class="text-lg text-coffee/80 mb-8 leading-relaxed max-w-xl mx-auto whitespace-pre-line">
+        <p
+          class="text-lg text-coffee/80 mb-8 leading-relaxed max-w-xl mx-auto whitespace-pre-line">
           {{ t("home.cta.questions") }}
         </p>
 
@@ -25,7 +26,7 @@ const { t } = useI18n();
         </p>
 
         <a
-          href="https://www.resalib.fr"
+          href="https://www.resalib.fr/praticien/124708-erika-diaz-de-cerio-magnetiseur-hendaye#newrdvmodal"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center px-8 py-4 bg-sage text-white rounded-full hover:bg-sage-dark transition-colors text-lg font-medium shadow-lg focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 min-h-[44px]">
