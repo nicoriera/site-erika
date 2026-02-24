@@ -1,9 +1,5 @@
-# Redirections pour Cloudflare Pages
-# Support i18n et fallback SPA
-
-/es/*  /es/:splat  200
-/*     /index.html 200
-
-
+# Avec nuxt generate, toutes les routes sont pré-rendues en HTML statique.
+# Pas de fallback SPA : sitemap.xml, robots.txt et fichiers de vérification
+# (ex. google*.html) doivent être servis tels quels pour Google Search Console.
 
 
