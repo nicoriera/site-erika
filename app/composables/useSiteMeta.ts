@@ -14,12 +14,27 @@ export const useSiteMeta = (
   const route = useRoute();
   const { locale } = useI18n();
 
-  // URL complète de la page
+  // URL complète de la page (domaine canonique www)
   const baseUrl =
-    (config.public.siteUrl as string) || "https://erikamagnetiseusehendaye.fr";
+    (config.public.siteUrl as string) ||
+    "https://www.erikamagnetiseusehendaye.fr";
   const currentLocale = locale.value || "fr";
   const path = route.path;
   const canonicalUrl = `${baseUrl}${path}`;
+
+  // Chemins FR et ES pour hreflang (strategy: prefix_except_default)
+  const isEs = path.startsWith("/es");
+  const frPath = isEs ? (path === "/es" ? "/" : path.slice(3) || "/") : path;
+  const esPath = isEs ? path : path === "/" ? "/es" : `/es${path}`;
+  const hreflangLinks = [
+    { rel: "alternate" as const, hreflang: "fr", href: `${baseUrl}${frPath}` },
+    { rel: "alternate" as const, hreflang: "es", href: `${baseUrl}${esPath}` },
+    {
+      rel: "alternate" as const,
+      hreflang: "x-default",
+      href: `${baseUrl}${frPath}`,
+    },
+  ];
 
   // Image par défaut (à créer plus tard)
   const defaultImage = `${baseUrl}/images/og-image.jpg`;
@@ -54,6 +69,7 @@ export const useSiteMeta = (
         rel: "canonical",
         href: canonicalUrl,
       },
+      ...hreflangLinks,
     ],
     meta: [
       {

@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+/// <reference types="node" />
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -18,7 +19,6 @@ export default defineNuxtConfig({
         name: "Español",
       },
     ],
-    lazy: false,
     langDir: "locales",
     defaultLocale: "fr",
     strategy: "prefix_except_default",
@@ -58,7 +58,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl:
-        process.env.NUXT_PUBLIC_SITE_URL || "https://erikamagnetiseusehendaye.fr",
+        process.env.NUXT_PUBLIC_SITE_URL ||
+        "https://www.erikamagnetiseusehendaye.fr",
     },
   },
   // Optimisation pour la génération statique
