@@ -42,7 +42,8 @@ export default defineNuxtConfig({
         { name: "author", content: "Erika Diaz de Cerio" },
         {
           name: "keywords",
-          content: "Erika Diaz de Cerio, Magnétiseuse, Hendaye",
+          content:
+            "Erika Diaz de Cerio, Magnétiseuse, Hendaye, erikamagnetiseusehendaye, soins énergétiques",
         },
       ],
       link: [

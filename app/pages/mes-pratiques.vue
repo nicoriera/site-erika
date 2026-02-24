@@ -173,10 +173,10 @@ const benefitsList = computed((): string[] => {
               {{ t("practices.magnetism.session.title") }}
             </h3>
             <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
-              <div class="order-2 md:order-1 max-w-[240px] md:max-w-[280px] mx-auto md:mx-0">
+              <div class="order-1 md:order-1 w-full max-w-[280px] md:max-w-[280px] mx-auto md:mx-0 shrink-0">
                 <div
                   class="relative rounded-2xl overflow-hidden bg-sand-light/50 shadow-lg shadow-coffee/10 ring-1 ring-black/5">
-                  <div class="aspect-[2/3] relative">
+                  <div class="aspect-[2/3] relative w-full">
                     <img
                       v-for="(src, index) in carouselSessionImages"
                       :key="src"
@@ -255,7 +255,7 @@ const benefitsList = computed((): string[] => {
                 </div>
               </div>
               <div
-                class="order-1 md:order-2 space-y-5 text-coffee/85 text-lg leading-relaxed">
+                class="order-2 md:order-2 space-y-5 text-coffee/85 text-lg leading-relaxed">
                 <p>{{ t("practices.magnetism.session.beginning") }}</p>
                 <p>{{ t("practices.magnetism.session.adaptation") }}</p>
                 <p>{{ t("practices.magnetism.session.during") }}</p>
