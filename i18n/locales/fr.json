@@ -32,15 +32,21 @@
   },
   "pages": {
     "home": "Accueil",
-    "about": "À propos",
-    "practices": "Mes pratiques",
-    "rates": "Tarifs",
-    "reviews": "Avis",
-    "contact": "Contact"
+    "about": "À propos — Magnétiseuse Hendaye",
+    "practices": "Magnétisme et Soins Énergétiques",
+    "rates": "Tarifs des Séances de Magnétisme",
+    "reviews": "Avis Clients — Magnétiseuse Hendaye",
+    "contact": "Contact & Adresse à Hendaye"
   },
   "meta": {
     "title": "Erika Diaz de Cerio",
-    "description": "Erika Diaz de Cerio - Magnétiseuse à Hendaye"
+    "homeTitle": "Magnétiseuse à Hendaye",
+    "description": "Erika Diaz de Cerio, magnétiseuse à Hendaye. Soins énergétiques et magnétisme thérapeutique, en cabinet et à distance.",
+    "aboutDescription": "Découvrez le parcours d'Erika Diaz de Cerio, magnétiseuse et praticienne en soins énergétiques à Hendaye. Sensible depuis toujours au bien-être, elle accompagne chaque personne avec écoute et bienveillance.",
+    "practicesDescription": "Magnétisme thérapeutique, couper le feu, soins à distance : découvrez les pratiques d'Erika à Hendaye pour soulager douleurs physiques, stress et tensions émotionnelles.",
+    "ratesDescription": "Tarifs des séances de magnétisme et soins énergétiques à Hendaye. Adulte 70 €, enfant 60 €. Prise de rendez-vous en ligne sur Resalib.",
+    "contactDescription": "Contactez Erika Diaz de Cerio, magnétiseuse à Hendaye. Cabinet au 14 boulevard du Général de Gaulle, consultations du lundi au samedi sur rendez-vous.",
+    "reviewsDescription": "Avis et témoignages de clients d'Erika Diaz de Cerio, magnétiseuse à Hendaye. Note 5/5 sur Google. Partagez votre expérience."
   },
   "common": {
     "readMore": "En savoir plus",
@@ -65,10 +71,12 @@
   },
   "home": {
     "hero": {
+      "h1Name": "Erika Diaz de Cerio",
+      "h1Tag": "Magnétiseuse à Hendaye",
       "name": "Erika Diaz de Cerio",
       "nameFirst": "Erika",
       "nameLast": "Diaz de Cerio",
-      "title": "Magnétisme et soins énergétiques",
+      "title": "Magnétisme et soins énergétiques · En cabinet et à distance",
       "location": "Hendaye - À distance",
       "imageAlt": "Paysage côtier d'Hendaye au coucher de soleil avec plage, formations rocheuses et ciel nuageux"
     },

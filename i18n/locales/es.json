@@ -32,15 +32,21 @@
   },
   "pages": {
     "home": "Inicio",
-    "about": "Sobre mí",
-    "practices": "Mis terapias",
-    "rates": "Honorarios",
-    "reviews": "Testimonios",
-    "contact": "Contacto"
+    "about": "Sobre mí — Magnetizadora Hendaya",
+    "practices": "Magnetismo y Terapias Energéticas",
+    "rates": "Tarifas de las Sesiones de Magnetismo",
+    "reviews": "Testimonios — Magnetizadora Hendaya",
+    "contact": "Contacto & Dirección en Hendaya"
   },
   "meta": {
     "title": "Erika Diaz de Cerio",
-    "description": "Erika Diaz de Cerio - Magnetizadora en Hendaya"
+    "homeTitle": "Magnetizadora en Hendaya",
+    "description": "Erika Diaz de Cerio, magnetizadora en Hendaya. Terapias energéticas y magnetismo terapéutico, en consulta y a distancia.",
+    "aboutDescription": "Descubre el recorrido de Erika Diaz de Cerio, magnetizadora y terapeuta en cuidados energéticos en Hendaya. Con escucha y benevolencia, acompaña a cada persona hacia el bienestar.",
+    "practicesDescription": "Magnetismo terapéutico, cortar el fuego, terapias a distancia: descubre las prácticas de Erika en Hendaya para aliviar dolores físicos, estrés y tensiones emocionales.",
+    "ratesDescription": "Tarifas de las sesiones de magnetismo y terapias energéticas en Hendaya. Adulto 70 €, niño 60 €. Reserva de cita en línea en Resalib.",
+    "contactDescription": "Contacta con Erika Diaz de Cerio, magnetizadora en Hendaya. Consulta en el 14 boulevard du Général de Gaulle, de lunes a sábado con cita previa.",
+    "reviewsDescription": "Opiniones y testimonios de clientes de Erika Diaz de Cerio, magnetizadora en Hendaya. Nota 5/5 en Google. Comparte tu experiencia."
   },
   "common": {
     "readMore": "Descubrir más",
@@ -49,10 +55,12 @@
   },
   "home": {
     "hero": {
+      "h1Name": "Erika Diaz de Cerio",
+      "h1Tag": "Magnetizadora en Hendaya",
       "name": "Erika Diaz de Cerio",
       "nameFirst": "Erika",
       "nameLast": "Diaz de Cerio",
-      "title": "Magnetismo y terapias energéticas",
+      "title": "Magnetismo y terapias energéticas · En consulta y a distancia",
       "location": "Hendaya - Y a distancia",
       "imageAlt": "Paisaje costero de Hendaya al atardecer con playa, formaciones rocosas y cielo nublado"
     },

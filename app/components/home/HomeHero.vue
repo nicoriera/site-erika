@@ -17,18 +17,15 @@ const { t } = useI18n();
     <!-- Contenu -->
     <div class="text-center px-4 py-16 z-10 relative flex flex-col gap-4">
       <h1
-        class="font-serif text-5xl md:text-6xl text-white mb-4 drop-shadow-lg">
-        {{ t("home.hero.title") }}
+        class="font-serif text-white drop-shadow-lg flex flex-col items-center gap-1">
+        <span class="text-4xl md:text-5xl">{{ t("home.hero.h1Name") }}</span>
+        <span class="text-white/70 text-2xl font-sans font-light">—</span>
+        <span class="text-3xl md:text-4xl">{{ t("home.hero.h1Tag") }}</span>
       </h1>
 
-      <div class="flex flex-col">
-        <p class="text-2xl md:text-3xl text-white/95 drop-shadow-md mb-1">
-          {{ t("home.hero.name") }}
-        </p>
-        <p class="text-xl md:text-2xl text-white/90 drop-shadow-md">
-          {{ t("home.hero.location") }}
-        </p>
-      </div>
+      <p class="text-xl md:text-2xl text-white/90 drop-shadow-md">
+        {{ t("home.hero.title") }}
+      </p>
     </div>
   </section>
 </template>

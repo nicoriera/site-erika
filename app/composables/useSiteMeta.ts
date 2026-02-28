@@ -1,6 +1,4 @@
 interface SiteMetaOptions {
-  title: string;
-  description: string;
   image?: string;
   type?: string;
 }
@@ -46,9 +44,9 @@ export const useSiteMeta = (
   // Titre complet avec site name
   const fullTitle = `${title} | Erika Diaz de Cerio`;
 
-  useSeoMeta({
-    title: fullTitle,
-    description,
+  // Balises OG et Twitter : server-only car les bots scannent uniquement le HTML initial
+  // (useServerSeoMeta ne s'exécute pas côté client → meilleure performance)
+  useServerSeoMeta({
     ogTitle: title,
     ogDescription: description,
     ogImage: image,
@@ -62,6 +60,7 @@ export const useSiteMeta = (
     twitterImage: image,
   });
 
+  // Titre, description et liens : useHead pour mise à jour lors de la navigation SPA
   useHead({
     title: fullTitle,
     link: [

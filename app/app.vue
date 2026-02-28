@@ -6,9 +6,7 @@ useHead({
   },
 });
 
-// Structured data désactivé temporairement pour la génération statique
-// TODO: Réactiver après correction des erreurs SSR
-// useStructuredData();
+useStructuredData();
 </script>
 
 <template>
