@@ -3,7 +3,7 @@ const { t } = useI18n();
 
 definePageMeta({});
 
-useSiteMeta(t("pages.home"), t("meta.description"));
+useSiteMeta(t("meta.homeTitle"), t("meta.description"));
 </script>
 
 <template>

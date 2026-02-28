@@ -3,7 +3,7 @@ const { t } = useI18n();
 
 definePageMeta({});
 
-useSiteMeta(t("pages.contact"), t("meta.description"));
+useSiteMeta(t("pages.contact"), t("meta.contactDescription"));
 
 const mapContainer = ref<HTMLElement | null>(null);
 const shouldLoadMap = ref(false);

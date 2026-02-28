@@ -3,7 +3,7 @@ const { t, tm } = useI18n();
 
 definePageMeta({});
 
-useSiteMeta(t("pages.practices"), t("meta.description"));
+useSiteMeta(t("pages.practices"), t("meta.practicesDescription"));
 
 // Helper pour les chemins d'images (espaces encodés)
 const img = (name: string) => encodeURI(`/images/${name}`);

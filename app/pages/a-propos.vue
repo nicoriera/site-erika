@@ -5,7 +5,7 @@ definePageMeta({});
 
 const photoAbout = encodeURI("/images/photo 13.png");
 
-useSiteMeta(t("pages.about"), t("meta.description"));
+useSiteMeta(t("pages.about"), t("meta.aboutDescription"));
 </script>
 
 <template>

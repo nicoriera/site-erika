@@ -1,114 +1,91 @@
-interface LocalBusinessSchema {
-  "@context": string;
-  "@type": string;
-  name: string;
-  description?: string;
-  address: {
-    "@type": string;
-    streetAddress: string;
-    addressLocality: string;
-    postalCode: string;
-    addressCountry: string;
-  };
-  telephone?: string;
-  email?: string;
-  url?: string;
-  priceRange?: string;
-  openingHours?: string;
-  image?: string;
-}
-
-interface PersonSchema {
-  "@context": string;
-  "@type": string;
-  name: string;
-  jobTitle?: string;
-  description?: string;
-  email?: string;
-  telephone?: string;
-  address?: {
-    "@type": string;
-    streetAddress: string;
-    addressLocality: string;
-    postalCode: string;
-    addressCountry: string;
-  };
-  image?: string;
-}
-
-interface ServiceSchema {
-  "@context": string;
-  "@type": string;
-  serviceType: string;
-  provider: {
-    "@type": string;
-    name: string;
-  };
-  areaServed: {
-    "@type": string;
-    name: string;
-  };
-  description?: string;
-}
-
 export const useStructuredData = () => {
-  const route = useRoute();
-  const { locale } = useI18n();
   const { t } = useI18n();
-
   const config = useRuntimeConfig();
   const baseUrl =
-    (config.public.siteUrl as string) || "https://erikamagnetiseusehendaye.fr";
-  const currentLocale = locale.value || "fr";
+    (config.public.siteUrl as string) ||
+    "https://www.erikamagnetiseusehendaye.fr";
 
-  // Schema LocalBusiness
-  const localBusinessSchema = computed<LocalBusinessSchema>(() => ({
+  // LocalBusiness avec AggregateRating intégré
+  const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HealthAndBeautyBusiness",
+    "@id": `${baseUrl}/#business`,
     name: "Erika Diaz de Cerio",
     description: t("meta.description"),
     address: {
       "@type": "PostalAddress",
-      streetAddress: "13 rue du Siège",
+      streetAddress: "14 boulevard du Général de Gaulle",
       addressLocality: "Hendaye",
       postalCode: "64700",
       addressCountry: "FR",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 43.3576,
+      longitude: -1.7697,
+    },
     telephone: "+33750260796",
-    email: "erika.magnetiseuse@gmail.com",
+    email: "soins.erikaddc@gmail.com",
     url: baseUrl,
     priceRange: "€€",
-    openingHours: "Mo-Sa",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "09:00",
+        closes: "19:00",
+      },
+    ],
     image: `${baseUrl}/images/og-image.jpg`,
-  }));
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "5",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
 
-  // Schema Person
-  const personSchema = computed<PersonSchema>(() => ({
+  // Person
+  const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": `${baseUrl}/#person`,
     name: "Erika Diaz de Cerio",
     jobTitle: t("header.subtitle"),
     description: t("meta.description"),
-    email: "erika.magnetiseuse@gmail.com",
+    email: "soins.erikaddc@gmail.com",
     telephone: "+33750260796",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "13 rue du Siège",
+      streetAddress: "14 boulevard du Général de Gaulle",
       addressLocality: "Hendaye",
       postalCode: "64700",
       addressCountry: "FR",
     },
+    worksFor: {
+      "@id": `${baseUrl}/#business`,
+    },
     image: `${baseUrl}/images/og-image.jpg`,
-  }));
+  };
 
-  // Schema Service pour les pratiques
-  const serviceSchemas = computed<ServiceSchema[]>(() => [
+  // Services
+  const serviceSchemas = [
     {
       "@context": "https://schema.org",
       "@type": "Service",
+      name: t("practices.magnetism.title"),
       serviceType: t("practices.magnetism.title"),
       provider: {
         "@type": "Person",
+        "@id": `${baseUrl}/#person`,
         name: "Erika Diaz de Cerio",
       },
       areaServed: {
@@ -116,13 +93,16 @@ export const useStructuredData = () => {
         name: "Hendaye",
       },
       description: t("practices.magnetism.description"),
+      url: `${baseUrl}/mes-pratiques#magnetisme`,
     },
     {
       "@context": "https://schema.org",
       "@type": "Service",
+      name: t("practices.cutFire.title"),
       serviceType: t("practices.cutFire.title"),
       provider: {
         "@type": "Person",
+        "@id": `${baseUrl}/#person`,
         name: "Erika Diaz de Cerio",
       },
       areaServed: {
@@ -130,30 +110,24 @@ export const useStructuredData = () => {
         name: "Hendaye",
       },
       description: t("practices.cutFire.intro"),
+      url: `${baseUrl}/mes-pratiques#couper-le-feu`,
     },
-  ]);
+  ];
 
-  // Ajouter les schemas à la page de manière réactive
   useHead({
-    script: computed(() => [
+    script: [
       {
         type: "application/ld+json",
-        children: JSON.stringify(localBusinessSchema.value),
+        innerHTML: JSON.stringify(localBusinessSchema),
       },
       {
         type: "application/ld+json",
-        children: JSON.stringify(personSchema.value),
+        innerHTML: JSON.stringify(personSchema),
       },
-      ...serviceSchemas.value.map((schema) => ({
+      ...serviceSchemas.map((schema) => ({
         type: "application/ld+json",
-        children: JSON.stringify(schema),
+        innerHTML: JSON.stringify(schema),
       })),
-    ]),
+    ],
   });
-
-  return {
-    localBusinessSchema,
-    personSchema,
-    serviceSchemas,
-  };
 };

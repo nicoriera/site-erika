@@ -3,7 +3,7 @@ const { t, tm } = useI18n();
 
 definePageMeta({});
 
-useSiteMeta(t("pages.reviews"), t("meta.description"));
+useSiteMeta(t("pages.reviews"), t("meta.reviewsDescription"));
 
 interface StaticReview {
   author: string;

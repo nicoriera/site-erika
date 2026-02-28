@@ -4,7 +4,7 @@ const localePath = useLocalePath();
 
 definePageMeta({});
 
-useSiteMeta(t("pages.rates"), t("meta.description"));
+useSiteMeta(t("pages.rates"), t("meta.ratesDescription"));
 </script>
 
 <template>
