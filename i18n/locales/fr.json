@@ -17,14 +17,14 @@
   },
   "footer": {
     "title": "Erika Diaz de Cerio – Magnétiseuse",
-    "address": "14 boulevard du Général de Gaulle",
+    "address": "13 rue du Siège",
     "city": "64700 Hendaye",
     "phone": "Tél :",
     "email": "Email :",
     "consultations": "Consultations",
     "consultationsSchedule": "Du lundi au samedi sur rendez-vous.",
-    "parking": "Stationnement gratuit dans la rue.",
-    "bus": "Arrêt Ville (bus n°4 ou 15).",
+    "parking": "Stationnement gratuit dans la rue",
+    "bus": "Arrêt de bus Joncaux (ligne n°14) à 50 m.",
     "payments": "Paiements",
     "paymentsMethods": "Espèces, chèque, Wero.",
     "paymentsRemote": "A distance : Wero ou virement.",
@@ -45,7 +45,7 @@
     "aboutDescription": "Découvrez le parcours d'Erika Diaz de Cerio, magnétiseuse et praticienne en soins énergétiques à Hendaye. Sensible depuis toujours au bien-être, elle accompagne chaque personne avec écoute et bienveillance.",
     "practicesDescription": "Magnétisme thérapeutique, couper le feu, soins à distance : découvrez les pratiques d'Erika à Hendaye pour soulager douleurs physiques, stress et tensions émotionnelles.",
     "ratesDescription": "Tarifs des séances de magnétisme et soins énergétiques à Hendaye. Adulte 70 €, enfant 60 €. Prise de rendez-vous en ligne sur Resalib.",
-    "contactDescription": "Contactez Erika Diaz de Cerio, magnétiseuse à Hendaye. Cabinet au 14 boulevard du Général de Gaulle, consultations du lundi au samedi sur rendez-vous.",
+    "contactDescription": "Contactez Erika Diaz de Cerio, magnétiseuse à Hendaye. Cabinet au 13 rue du Siège, consultations du lundi au samedi sur rendez-vous.",
     "reviewsDescription": "Avis et témoignages de clients d'Erika Diaz de Cerio, magnétiseuse à Hendaye. Note 5/5 sur Google. Partagez votre expérience."
   },
   "common": {
@@ -58,7 +58,7 @@
     "subtitle": "N'hésitez pas à me contacter pour toute question ou pour prendre rendez-vous",
     "info": {
       "title": "Informations de contact",
-      "address": "14 boulevard du Général de Gaulle",
+      "address": "13 rue du Siège",
       "city": "64700 Hendaye",
       "phone": "Téléphone",
       "email": "Email",
