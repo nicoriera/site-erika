@@ -14,15 +14,15 @@ export const useStructuredData = () => {
     description: t("meta.description"),
     address: {
       "@type": "PostalAddress",
-      streetAddress: "14 boulevard du Général de Gaulle",
+      streetAddress: "13 rue du Siège",
       addressLocality: "Hendaye",
       postalCode: "64700",
       addressCountry: "FR",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 43.3576,
-      longitude: -1.7697,
+      latitude: 43.3444,
+      longitude: -1.7692,
     },
     telephone: "+33750260796",
     email: "soins.erikaddc@gmail.com",
@@ -65,7 +65,7 @@ export const useStructuredData = () => {
     telephone: "+33750260796",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "14 boulevard du Général de Gaulle",
+      streetAddress: "13 rue du Siège",
       addressLocality: "Hendaye",
       postalCode: "64700",
       addressCountry: "FR",
